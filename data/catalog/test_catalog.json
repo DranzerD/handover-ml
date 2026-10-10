@@ -1,0 +1,3864 @@
+[
+ {
+  "test_id": "SMOKE-001",
+  "template": "smoke_attach",
+  "category": "smoke",
+  "tags": [
+   "rrc.connection"
+  ],
+  "duration_s": 20.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 10.0
+  },
+  "critical": true,
+  "description": "UE attaches at good SINR",
+  "coverage_items": [
+   "band:n78",
+   "cat:smoke",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "SMOKE-002",
+  "template": "smoke_dl",
+  "category": "smoke",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.scheduler"
+  ],
+  "duration_s": 40.0,
+  "params": {
+   "band": "n78",
+   "bw": 40,
+   "sinr_db": 15.0
+  },
+  "critical": true,
+  "description": "Basic DL throughput sanity",
+  "coverage_items": [
+   "band:n78",
+   "cat:smoke",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SMOKE-003",
+  "template": "smoke_latency",
+  "category": "smoke",
+  "tags": [
+   "transport.latency"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "n78",
+   "load": 0.3
+  },
+  "critical": true,
+  "description": "Ping latency at light load",
+  "coverage_items": [
+   "band:n78",
+   "cat:smoke",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "SMOKE-004",
+  "template": "smoke_handover",
+  "category": "smoke",
+  "tags": [
+   "mobility.handover"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 30.0,
+   "ttt_ms": 160.0
+  },
+  "critical": true,
+  "description": "Single intra-frequency handover",
+  "coverage_items": [
+   "band:n78",
+   "cat:smoke",
+   "mobility.handover"
+  ]
+ },
+ {
+  "test_id": "SMOKE-005",
+  "template": "smoke_config",
+  "category": "smoke",
+  "tags": [
+   "config.parser"
+  ],
+  "duration_s": 10.0,
+  "params": {
+   "band": "n78",
+   "bw": 40
+  },
+  "critical": true,
+  "description": "Default configuration parses",
+  "coverage_items": [
+   "band:n78",
+   "cat:smoke",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-001",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "b13",
+   "location": "outdoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-002",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "b13",
+   "location": "indoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-003",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n3",
+   "location": "outdoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n3",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-004",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n3",
+   "location": "indoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n3",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-005",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n41",
+   "location": "outdoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n41",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-006",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n41",
+   "location": "indoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n41",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-007",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n78",
+   "location": "outdoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-RSRP-008",
+  "template": "rsrp_measurement",
+  "category": "signal_quality",
+  "tags": [
+   "phy.pathloss",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "band": "n78",
+   "location": "indoor"
+  },
+  "critical": false,
+  "description": "RSRP reporting accuracy and link budget",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "config.band",
+   "mobility.measurement",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-001",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "b13",
+   "sinr_db": 0.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-002",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "b13",
+   "sinr_db": 10.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-003",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "b13",
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-004",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "b13",
+   "sinr_db": 25.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:b13",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-005",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 0.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-006",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 10.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-007",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-CQI-008",
+  "template": "cqi_link_adaptation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq"
+  ],
+  "duration_s": 30.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 25.0
+  },
+  "critical": false,
+  "description": "CQI selection and BLER target",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-001",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n3",
+   "profile": "gradual"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n3",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-002",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n3",
+   "profile": "step"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n3",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-003",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n3",
+   "profile": "deep_fade"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n3",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-004",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n78",
+   "profile": "gradual"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-005",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n78",
+   "profile": "step"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "SIG-DEG-006",
+  "template": "link_degradation",
+  "category": "signal_quality",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "rrc.timers"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "band": "n78",
+   "profile": "deep_fade"
+  },
+  "critical": false,
+  "description": "Link-quality degradation and recovery",
+  "coverage_items": [
+   "band:n78",
+   "cat:signal_quality",
+   "mac.harq",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-001",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "b13",
+   "bw": 10,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:b13",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-002",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "b13",
+   "bw": 10,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:b13",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-003",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "b13",
+   "bw": 10,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:b13",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-004",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 20,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-005",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 20,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-006",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 20,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-007",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 40,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-008",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 40,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-009",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "bw": 40,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-010",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n41",
+   "bw": 100,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n41",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-011",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n41",
+   "bw": 100,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n41",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-012",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n41",
+   "bw": 100,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n41",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-013",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 40,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-014",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 40,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-015",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 40,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-016",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 100,
+   "sinr_db": 6.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-017",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 100,
+   "sinr_db": 13.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-DL-018",
+  "template": "dl_throughput",
+  "category": "throughput",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "config.band"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "bw": 100,
+   "sinr_db": 20.0
+  },
+  "critical": false,
+  "description": "DL throughput vs reference",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "config.band",
+   "mac.harq",
+   "mac.scheduler",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-001",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 50.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-002",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 50.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-003",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 200.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-004",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 200.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-005",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 350.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-006",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "distance_m": 350.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n3",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-007",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 50.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-008",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 50.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-009",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 200.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-010",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 200.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-011",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 350.0,
+   "pl_error_db": 0.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-UL-012",
+  "template": "ul_throughput",
+  "category": "throughput",
+  "tags": [
+   "power.control",
+   "phy.pathloss",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "distance_m": 350.0,
+   "pl_error_db": -4.0
+  },
+  "critical": false,
+  "description": "UL throughput / power control",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "power.control"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-001",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 2,
+   "traffic": "equal"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-002",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 2,
+   "traffic": "mixed"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-003",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 4,
+   "traffic": "equal"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-004",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 4,
+   "traffic": "mixed"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-005",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 8,
+   "traffic": "equal"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-006",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 8,
+   "traffic": "mixed"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-007",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 16,
+   "traffic": "equal"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "TPUT-MU-008",
+  "template": "multi_user",
+  "category": "throughput",
+  "tags": [
+   "mac.scheduler"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "band": "n78",
+   "users": 16,
+   "traffic": "mixed"
+  },
+  "critical": false,
+  "description": "Multi-UE scheduling fairness",
+  "coverage_items": [
+   "band:n78",
+   "cat:throughput",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-001",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "load": 0.3
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n3",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-002",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "load": 0.6
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n3",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-003",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "load": 0.8
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n3",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-004",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n3",
+   "load": 0.9
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n3",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-005",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "load": 0.3
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-006",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "load": 0.6
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-007",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "load": 0.8
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-RTT-008",
+  "template": "latency_load",
+  "category": "latency_loss",
+  "tags": [
+   "transport.latency",
+   "mac.harq",
+   "mac.scheduler"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "load": 0.9
+  },
+  "critical": false,
+  "description": "User-plane latency under load",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "mac.scheduler",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-001",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "static",
+   "interference_db": 0.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-002",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "static",
+   "interference_db": 4.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-003",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "static",
+   "interference_db": 8.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-004",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "vehicular",
+   "interference_db": 0.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-005",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "vehicular",
+   "interference_db": 4.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-LOSS-006",
+  "template": "packet_loss",
+  "category": "latency_loss",
+  "tags": [
+   "mac.harq",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "band": "n78",
+   "mobility": "vehicular",
+   "interference_db": 8.0
+  },
+  "critical": false,
+  "description": "Residual loss under interference",
+  "coverage_items": [
+   "band:n78",
+   "cat:latency_loss",
+   "mac.harq",
+   "phy.link_adaptation"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-001",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 64,
+   "period_steps": 10
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-002",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 64,
+   "period_steps": 20
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-003",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 200,
+   "period_steps": 10
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-004",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 200,
+   "period_steps": 20
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-005",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 400,
+   "period_steps": 10
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "LAT-BURST-006",
+  "template": "burst_buffer",
+  "category": "latency_loss",
+  "tags": [
+   "transport.buffer",
+   "transport.latency"
+  ],
+  "duration_s": 45.0,
+  "params": {
+   "burst_packets": 400,
+   "period_steps": 20
+  },
+  "critical": false,
+  "description": "Bursty traffic buffering",
+  "coverage_items": [
+   "cat:latency_loss",
+   "transport.buffer",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-001",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n3",
+   "sinr_db": -2.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n3",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-002",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n3",
+   "sinr_db": 0.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n3",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-003",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n3",
+   "sinr_db": 5.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n3",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-004",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n3",
+   "sinr_db": 15.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n3",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-005",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": -2.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n78",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-006",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 0.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n78",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-007",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 5.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n78",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-SETUP-008",
+  "template": "rrc_setup",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "phy.link_adaptation"
+  ],
+  "duration_s": 50.0,
+  "params": {
+   "band": "n78",
+   "sinr_db": 15.0
+  },
+  "critical": false,
+  "description": "RRC connection establishment",
+  "coverage_items": [
+   "band:n78",
+   "cat:connection",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-001",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "rlf",
+   "cycles": 1
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-002",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "rlf",
+   "cycles": 3
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-003",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "rlf",
+   "cycles": 5
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-004",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "release",
+   "cycles": 1
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-005",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "release",
+   "cycles": 3
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "CONN-RECON-006",
+  "template": "reconnection",
+  "category": "connection",
+  "tags": [
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ],
+  "duration_s": 90.0,
+  "params": {
+   "cause": "release",
+   "cycles": 5
+  },
+  "critical": false,
+  "description": "Reconnection after link loss",
+  "coverage_items": [
+   "cat:connection",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-001",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 342.0,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 3.0,
+   "ttt_ms": 40.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-002",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 342.0,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 3.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-003",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 342.0,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 3.0,
+   "ttt_ms": 320.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-004",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 61.2,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 30.0,
+   "ttt_ms": 40.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-005",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 61.2,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 30.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-006",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 61.2,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 30.0,
+   "ttt_ms": 320.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-007",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 45.6,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 60.0,
+   "ttt_ms": 40.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-008",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 45.6,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 60.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-009",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 45.6,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 60.0,
+   "ttt_ms": 320.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-010",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 37.8,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 120.0,
+   "ttt_ms": 40.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-011",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 37.8,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 120.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-012",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 37.8,
+  "params": {
+   "band": "n78",
+   "speed_kmh": 120.0,
+   "ttt_ms": 320.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-013",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 61.2,
+  "params": {
+   "band": "n3",
+   "speed_kmh": 30.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n3",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTRA-014",
+  "template": "intra_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 37.8,
+  "params": {
+   "band": "n3",
+   "speed_kmh": 120.0,
+   "ttt_ms": 160.0
+  },
+  "critical": false,
+  "description": "Intra-frequency handover drive",
+  "coverage_items": [
+   "band:n3",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "HO-INTER-001",
+  "template": "inter_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 78.0,
+  "params": {
+   "band": "n3",
+   "target_band": "n78",
+   "speed_kmh": 30.0
+  },
+  "critical": false,
+  "description": "Inter-frequency handover drive",
+  "coverage_items": [
+   "band:n3",
+   "cat:handover",
+   "config.band",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-INTER-002",
+  "template": "inter_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 42.0,
+  "params": {
+   "band": "n3",
+   "target_band": "n78",
+   "speed_kmh": 120.0
+  },
+  "critical": false,
+  "description": "Inter-frequency handover drive",
+  "coverage_items": [
+   "band:n3",
+   "cat:handover",
+   "config.band",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-INTER-003",
+  "template": "inter_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 78.0,
+  "params": {
+   "band": "n78",
+   "target_band": "n41",
+   "speed_kmh": 30.0
+  },
+  "critical": false,
+  "description": "Inter-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "config.band",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-INTER-004",
+  "template": "inter_handover",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement",
+   "config.band"
+  ],
+  "duration_s": 42.0,
+  "params": {
+   "band": "n78",
+   "target_band": "n41",
+   "speed_kmh": 120.0
+  },
+  "critical": false,
+  "description": "Inter-frequency handover drive",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "config.band",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-001",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 1.0,
+   "fading": "low"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-002",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 1.0,
+   "fading": "high"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-003",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 2.0,
+   "fading": "low"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-004",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 2.0,
+   "fading": "high"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-005",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 3.0,
+   "fading": "low"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "HO-PP-006",
+  "template": "ping_pong",
+  "category": "handover",
+  "tags": [
+   "mobility.handover",
+   "mobility.measurement"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "hysteresis_db": 3.0,
+   "fading": "high"
+  },
+  "critical": false,
+  "description": "Border loitering ping-pong",
+  "coverage_items": [
+   "band:n78",
+   "cat:handover",
+   "mobility.handover",
+   "mobility.measurement"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-001",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 50.5,
+  "params": {
+   "outage_s": 0.5,
+   "count": 1
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-002",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 91.5,
+  "params": {
+   "outage_s": 0.5,
+   "count": 3
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-003",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 52.0,
+  "params": {
+   "outage_s": 2.0,
+   "count": 1
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-004",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 96.0,
+  "params": {
+   "outage_s": 2.0,
+   "count": 3
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-005",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "outage_s": 10.0,
+   "count": 1
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-OUT-006",
+  "template": "outage_recovery",
+  "category": "interruption",
+  "tags": [
+   "session.reconnect",
+   "rrc.timers"
+  ],
+  "duration_s": 120.0,
+  "params": {
+   "outage_s": 10.0,
+   "count": 3
+  },
+  "critical": false,
+  "description": "Network outage detection and recovery",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers",
+   "session.reconnect"
+  ]
+ },
+ {
+  "test_id": "INT-RLM-001",
+  "template": "rlm_fade",
+  "category": "interruption",
+  "tags": [
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "fade_ms": 200
+  },
+  "critical": false,
+  "description": "Radio link monitoring vs. fade duration",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "INT-RLM-002",
+  "template": "rlm_fade",
+  "category": "interruption",
+  "tags": [
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "fade_ms": 500
+  },
+  "critical": false,
+  "description": "Radio link monitoring vs. fade duration",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "INT-RLM-003",
+  "template": "rlm_fade",
+  "category": "interruption",
+  "tags": [
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "fade_ms": 850
+  },
+  "critical": false,
+  "description": "Radio link monitoring vs. fade duration",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "INT-RLM-004",
+  "template": "rlm_fade",
+  "category": "interruption",
+  "tags": [
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "fade_ms": 1500
+  },
+  "critical": false,
+  "description": "Radio link monitoring vs. fade duration",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "INT-RLM-005",
+  "template": "rlm_fade",
+  "category": "interruption",
+  "tags": [
+   "rrc.timers"
+  ],
+  "duration_s": 60.0,
+  "params": {
+   "fade_ms": 3000
+  },
+  "critical": false,
+  "description": "Radio link monitoring vs. fade duration",
+  "coverage_items": [
+   "cat:interruption",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-001",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band",
+   "mac.scheduler"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n3",
+   "from": {
+    "bw": 20
+   },
+   "change": {
+    "bandwidth_mhz": 40
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n3",
+   "cat:configuration",
+   "config.band",
+   "config.parser",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-002",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band",
+   "mac.scheduler"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n78",
+   "from": {
+    "bw": 40
+   },
+   "change": {
+    "bandwidth_mhz": 100
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.band",
+   "config.parser",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-003",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band",
+   "mac.scheduler"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n41",
+   "from": {
+    "bw": 40
+   },
+   "change": {
+    "bandwidth_mhz": 100
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n41",
+   "cat:configuration",
+   "config.band",
+   "config.parser",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-004",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band",
+   "phy.pathloss"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n3",
+   "from": {
+    "bw": 20
+   },
+   "change": {
+    "band": "n78",
+    "bandwidth_mhz": 40
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n3",
+   "cat:configuration",
+   "config.band",
+   "config.parser",
+   "phy.pathloss"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-005",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "transport.buffer"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n78",
+   "from": {
+    "bw": 40
+   },
+   "change": {
+    "mtu": 1280
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.parser",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-006",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "transport.buffer"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n78",
+   "from": {
+    "bw": 40
+   },
+   "change": {
+    "mtu": 9000
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.parser",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-007",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "mac.scheduler"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n78",
+   "from": {
+    "bw": 40
+   },
+   "change": {
+    "tdd_pattern": "DDSUU"
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.parser",
+   "mac.scheduler"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-008",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n3",
+   "from": {
+    "bw": 20
+   },
+   "change": {
+    "bandwidth_mhz": 100
+   },
+   "expect": "reject"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n3",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-009",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "n3",
+   "from": {
+    "bw": 20
+   },
+   "change": {
+    "band": "n99"
+   },
+   "expect": "reject"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:n3",
+   "cat:configuration",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-APPLY-010",
+  "template": "config_apply",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 25.0,
+  "params": {
+   "band": "b13",
+   "from": {
+    "bw": 5
+   },
+   "change": {
+    "bandwidth_mhz": 10
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Apply configuration change",
+  "coverage_items": [
+   "band:b13",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-001",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "n78",
+   "raw": {
+    "band": "n78",
+    "bandwidth_mhz": 40
+   },
+   "expect": "accept"
+  },
+  "critical": true,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-002",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "n78",
+   "raw": {
+    "band": "n78",
+    "bandwidth_mhz": 100
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-003",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "b13",
+   "raw": {
+    "band": "b13",
+    "bandwidth_mhz": 5
+   },
+   "expect": "accept"
+  },
+  "critical": false,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:b13",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-004",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "n78",
+   "raw": {
+    "band": "n78",
+    "bandwidth_mhz": 40,
+    "mtu": 10000
+   },
+   "expect": "reject"
+  },
+  "critical": false,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:n78",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-005",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "n41",
+   "raw": {
+    "band": "n41",
+    "bandwidth_mhz": 40,
+    "tdd_pattern": "DDXU"
+   },
+   "expect": "reject"
+  },
+  "critical": false,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:n41",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "CFG-VALID-006",
+  "template": "config_validation",
+  "category": "configuration",
+  "tags": [
+   "config.parser",
+   "config.band"
+  ],
+  "duration_s": 5.0,
+  "params": {
+   "band": "n3",
+   "raw": {
+    "band": "n3",
+    "bandwidth_mhz": 20,
+    "tx_power_dbm": 55
+   },
+   "expect": "reject"
+  },
+  "critical": false,
+  "description": "Configuration schema validation",
+  "coverage_items": [
+   "band:n3",
+   "cat:configuration",
+   "config.band",
+   "config.parser"
+  ]
+ },
+ {
+  "test_id": "REG-KPI-001",
+  "template": "kpi_regression",
+  "category": "regression",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.scheduler",
+   "transport.latency",
+   "mobility.handover",
+   "rrc.connection"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "profile": "urban"
+  },
+  "critical": false,
+  "description": "Composite KPI regression with tight tolerances",
+  "coverage_items": [
+   "band:n78",
+   "cat:regression",
+   "mac.scheduler",
+   "mobility.handover",
+   "phy.link_adaptation",
+   "rrc.connection",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "REG-KPI-002",
+  "template": "kpi_regression",
+  "category": "regression",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mac.scheduler",
+   "mobility.handover",
+   "rrc.connection"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "profile": "suburban"
+  },
+  "critical": false,
+  "description": "Composite KPI regression with tight tolerances",
+  "coverage_items": [
+   "band:n78",
+   "cat:regression",
+   "mac.harq",
+   "mac.scheduler",
+   "mobility.handover",
+   "phy.link_adaptation",
+   "rrc.connection"
+  ]
+ },
+ {
+  "test_id": "REG-KPI-003",
+  "template": "kpi_regression",
+  "category": "regression",
+  "tags": [
+   "phy.link_adaptation",
+   "mac.harq",
+   "mobility.handover",
+   "mobility.measurement",
+   "rrc.timers"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "profile": "highway"
+  },
+  "critical": false,
+  "description": "Composite KPI regression with tight tolerances",
+  "coverage_items": [
+   "band:n78",
+   "cat:regression",
+   "mac.harq",
+   "mobility.handover",
+   "mobility.measurement",
+   "phy.link_adaptation",
+   "rrc.timers"
+  ]
+ },
+ {
+  "test_id": "REG-KPI-004",
+  "template": "kpi_regression",
+  "category": "regression",
+  "tags": [
+   "phy.pathloss",
+   "phy.link_adaptation",
+   "transport.latency",
+   "rrc.connection"
+  ],
+  "duration_s": 300.0,
+  "params": {
+   "band": "n78",
+   "profile": "indoor"
+  },
+  "critical": false,
+  "description": "Composite KPI regression with tight tolerances",
+  "coverage_items": [
+   "band:n78",
+   "cat:regression",
+   "phy.link_adaptation",
+   "phy.pathloss",
+   "rrc.connection",
+   "transport.latency"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-001",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 900.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 900,
+   "traffic": "steady"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-002",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 900.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 900,
+   "traffic": "bursty"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-003",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 1800.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 1800,
+   "traffic": "steady"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-004",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 1800.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 1800,
+   "traffic": "bursty"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-005",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 3600.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 3600,
+   "traffic": "steady"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ },
+ {
+  "test_id": "STAB-LONG-006",
+  "template": "stability",
+  "category": "stability",
+  "tags": [
+   "transport.buffer",
+   "rrc.timers",
+   "session.reconnect",
+   "rrc.connection"
+  ],
+  "duration_s": 3600.0,
+  "params": {
+   "band": "n78",
+   "soak_s": 3600,
+   "traffic": "bursty"
+  },
+  "critical": false,
+  "description": "Long-duration soak test",
+  "coverage_items": [
+   "band:n78",
+   "cat:stability",
+   "rrc.connection",
+   "rrc.timers",
+   "session.reconnect",
+   "transport.buffer"
+  ]
+ }
+]

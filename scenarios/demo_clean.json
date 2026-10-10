@@ -1,0 +1,27 @@
+{
+  "visible": {
+    "change_id": 10000,
+    "change_type": "feature",
+    "area": "mobility",
+    "changed_components": [
+      "mobility.handover",
+      "mobility.measurement"
+    ],
+    "lines_changed": 107,
+    "files_changed": 2,
+    "env": {
+      "device": "devA",
+      "lab_interference_db": 0.84,
+      "temperature_c": 26.4,
+      "firmware_branch": "main"
+    },
+    "seed": 1926751965
+  },
+  "ground_truth": {
+    "new_faults": [],
+    "carried_faults": [],
+    "active_faults": [],
+    "fault_details": {},
+    "_note": "Hidden ground truth. Never read by selection strategies; used only by the executor."
+  }
+}

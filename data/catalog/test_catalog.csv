@@ -1,0 +1,161 @@
+test_id,template,category,band,tags,n_tags,duration_s,critical,description
+SMOKE-001,smoke_attach,smoke,n78,rrc.connection,1,20.0,True,UE attaches at good SINR
+SMOKE-002,smoke_dl,smoke,n78,phy.link_adaptation;mac.scheduler,2,40.0,True,Basic DL throughput sanity
+SMOKE-003,smoke_latency,smoke,n78,transport.latency,1,30.0,True,Ping latency at light load
+SMOKE-004,smoke_handover,smoke,n78,mobility.handover,1,60.0,True,Single intra-frequency handover
+SMOKE-005,smoke_config,smoke,n78,config.parser,1,10.0,True,Default configuration parses
+SIG-RSRP-001,rsrp_measurement,signal_quality,b13,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-002,rsrp_measurement,signal_quality,b13,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-003,rsrp_measurement,signal_quality,n3,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-004,rsrp_measurement,signal_quality,n3,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-005,rsrp_measurement,signal_quality,n41,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-006,rsrp_measurement,signal_quality,n41,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-007,rsrp_measurement,signal_quality,n78,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-RSRP-008,rsrp_measurement,signal_quality,n78,phy.pathloss;mobility.measurement;config.band,3,45.0,False,RSRP reporting accuracy and link budget
+SIG-CQI-001,cqi_link_adaptation,signal_quality,b13,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-002,cqi_link_adaptation,signal_quality,b13,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-003,cqi_link_adaptation,signal_quality,b13,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-004,cqi_link_adaptation,signal_quality,b13,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-005,cqi_link_adaptation,signal_quality,n78,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-006,cqi_link_adaptation,signal_quality,n78,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-007,cqi_link_adaptation,signal_quality,n78,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-CQI-008,cqi_link_adaptation,signal_quality,n78,phy.link_adaptation;mac.harq,2,30.0,False,CQI selection and BLER target
+SIG-DEG-001,link_degradation,signal_quality,n3,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+SIG-DEG-002,link_degradation,signal_quality,n3,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+SIG-DEG-003,link_degradation,signal_quality,n3,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+SIG-DEG-004,link_degradation,signal_quality,n78,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+SIG-DEG-005,link_degradation,signal_quality,n78,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+SIG-DEG-006,link_degradation,signal_quality,n78,phy.link_adaptation;mac.harq;rrc.timers,3,90.0,False,Link-quality degradation and recovery
+TPUT-DL-001,dl_throughput,throughput,b13,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-002,dl_throughput,throughput,b13,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-003,dl_throughput,throughput,b13,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-004,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-005,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-006,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-007,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-008,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-009,dl_throughput,throughput,n3,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-010,dl_throughput,throughput,n41,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-011,dl_throughput,throughput,n41,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-012,dl_throughput,throughput,n41,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-013,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-014,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-015,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-016,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-017,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-DL-018,dl_throughput,throughput,n78,phy.link_adaptation;mac.harq;mac.scheduler;config.band,4,60.0,False,DL throughput vs reference
+TPUT-UL-001,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-002,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-003,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-004,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-005,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-006,ul_throughput,throughput,n3,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-007,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-008,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-009,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-010,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-011,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-UL-012,ul_throughput,throughput,n78,power.control;phy.pathloss;phy.link_adaptation,3,60.0,False,UL throughput / power control
+TPUT-MU-001,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-002,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-003,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-004,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-005,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-006,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-007,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+TPUT-MU-008,multi_user,throughput,n78,mac.scheduler,1,120.0,False,Multi-UE scheduling fairness
+LAT-RTT-001,latency_load,latency_loss,n3,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-002,latency_load,latency_loss,n3,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-003,latency_load,latency_loss,n3,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-004,latency_load,latency_loss,n3,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-005,latency_load,latency_loss,n78,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-006,latency_load,latency_loss,n78,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-007,latency_load,latency_loss,n78,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-RTT-008,latency_load,latency_loss,n78,transport.latency;mac.harq;mac.scheduler,3,60.0,False,User-plane latency under load
+LAT-LOSS-001,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-LOSS-002,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-LOSS-003,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-LOSS-004,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-LOSS-005,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-LOSS-006,packet_loss,latency_loss,n78,mac.harq;phy.link_adaptation,2,60.0,False,Residual loss under interference
+LAT-BURST-001,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+LAT-BURST-002,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+LAT-BURST-003,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+LAT-BURST-004,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+LAT-BURST-005,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+LAT-BURST-006,burst_buffer,latency_loss,na,transport.buffer;transport.latency,2,45.0,False,Bursty traffic buffering
+CONN-SETUP-001,rrc_setup,connection,n3,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-002,rrc_setup,connection,n3,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-003,rrc_setup,connection,n3,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-004,rrc_setup,connection,n3,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-005,rrc_setup,connection,n78,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-006,rrc_setup,connection,n78,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-007,rrc_setup,connection,n78,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-SETUP-008,rrc_setup,connection,n78,rrc.connection;phy.link_adaptation,2,50.0,False,RRC connection establishment
+CONN-RECON-001,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+CONN-RECON-002,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+CONN-RECON-003,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+CONN-RECON-004,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+CONN-RECON-005,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+CONN-RECON-006,reconnection,connection,na,rrc.connection;rrc.timers;session.reconnect,3,90.0,False,Reconnection after link loss
+HO-INTRA-001,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,342.0,False,Intra-frequency handover drive
+HO-INTRA-002,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,342.0,False,Intra-frequency handover drive
+HO-INTRA-003,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,342.0,False,Intra-frequency handover drive
+HO-INTRA-004,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,61.2,False,Intra-frequency handover drive
+HO-INTRA-005,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,61.2,False,Intra-frequency handover drive
+HO-INTRA-006,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,61.2,False,Intra-frequency handover drive
+HO-INTRA-007,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,45.6,False,Intra-frequency handover drive
+HO-INTRA-008,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,45.6,False,Intra-frequency handover drive
+HO-INTRA-009,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,45.6,False,Intra-frequency handover drive
+HO-INTRA-010,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,37.8,False,Intra-frequency handover drive
+HO-INTRA-011,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,37.8,False,Intra-frequency handover drive
+HO-INTRA-012,intra_handover,handover,n78,mobility.handover;mobility.measurement;rrc.timers,3,37.8,False,Intra-frequency handover drive
+HO-INTRA-013,intra_handover,handover,n3,mobility.handover;mobility.measurement;rrc.timers,3,61.2,False,Intra-frequency handover drive
+HO-INTRA-014,intra_handover,handover,n3,mobility.handover;mobility.measurement;rrc.timers,3,37.8,False,Intra-frequency handover drive
+HO-INTER-001,inter_handover,handover,n3,mobility.handover;mobility.measurement;config.band,3,78.0,False,Inter-frequency handover drive
+HO-INTER-002,inter_handover,handover,n3,mobility.handover;mobility.measurement;config.band,3,42.0,False,Inter-frequency handover drive
+HO-INTER-003,inter_handover,handover,n78,mobility.handover;mobility.measurement;config.band,3,78.0,False,Inter-frequency handover drive
+HO-INTER-004,inter_handover,handover,n78,mobility.handover;mobility.measurement;config.band,3,42.0,False,Inter-frequency handover drive
+HO-PP-001,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+HO-PP-002,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+HO-PP-003,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+HO-PP-004,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+HO-PP-005,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+HO-PP-006,ping_pong,handover,n78,mobility.handover;mobility.measurement,2,300.0,False,Border loitering ping-pong
+INT-OUT-001,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,50.5,False,Network outage detection and recovery
+INT-OUT-002,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,91.5,False,Network outage detection and recovery
+INT-OUT-003,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,52.0,False,Network outage detection and recovery
+INT-OUT-004,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,96.0,False,Network outage detection and recovery
+INT-OUT-005,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,60.0,False,Network outage detection and recovery
+INT-OUT-006,outage_recovery,interruption,na,session.reconnect;rrc.timers,2,120.0,False,Network outage detection and recovery
+INT-RLM-001,rlm_fade,interruption,na,rrc.timers,1,60.0,False,Radio link monitoring vs. fade duration
+INT-RLM-002,rlm_fade,interruption,na,rrc.timers,1,60.0,False,Radio link monitoring vs. fade duration
+INT-RLM-003,rlm_fade,interruption,na,rrc.timers,1,60.0,False,Radio link monitoring vs. fade duration
+INT-RLM-004,rlm_fade,interruption,na,rrc.timers,1,60.0,False,Radio link monitoring vs. fade duration
+INT-RLM-005,rlm_fade,interruption,na,rrc.timers,1,60.0,False,Radio link monitoring vs. fade duration
+CFG-APPLY-001,config_apply,configuration,n3,config.parser;config.band;mac.scheduler,3,25.0,False,Apply configuration change
+CFG-APPLY-002,config_apply,configuration,n78,config.parser;config.band;mac.scheduler,3,25.0,False,Apply configuration change
+CFG-APPLY-003,config_apply,configuration,n41,config.parser;config.band;mac.scheduler,3,25.0,False,Apply configuration change
+CFG-APPLY-004,config_apply,configuration,n3,config.parser;config.band;phy.pathloss,3,25.0,False,Apply configuration change
+CFG-APPLY-005,config_apply,configuration,n78,config.parser;transport.buffer,2,25.0,False,Apply configuration change
+CFG-APPLY-006,config_apply,configuration,n78,config.parser;transport.buffer,2,25.0,False,Apply configuration change
+CFG-APPLY-007,config_apply,configuration,n78,config.parser;mac.scheduler,2,25.0,False,Apply configuration change
+CFG-APPLY-008,config_apply,configuration,n3,config.parser;config.band,2,25.0,False,Apply configuration change
+CFG-APPLY-009,config_apply,configuration,n3,config.parser,1,25.0,False,Apply configuration change
+CFG-APPLY-010,config_apply,configuration,b13,config.parser;config.band,2,25.0,False,Apply configuration change
+CFG-VALID-001,config_validation,configuration,n78,config.parser;config.band,2,5.0,True,Configuration schema validation
+CFG-VALID-002,config_validation,configuration,n78,config.parser;config.band,2,5.0,False,Configuration schema validation
+CFG-VALID-003,config_validation,configuration,b13,config.parser;config.band,2,5.0,False,Configuration schema validation
+CFG-VALID-004,config_validation,configuration,n78,config.parser;config.band,2,5.0,False,Configuration schema validation
+CFG-VALID-005,config_validation,configuration,n41,config.parser;config.band,2,5.0,False,Configuration schema validation
+CFG-VALID-006,config_validation,configuration,n3,config.parser;config.band,2,5.0,False,Configuration schema validation
+REG-KPI-001,kpi_regression,regression,n78,phy.link_adaptation;mac.scheduler;transport.latency;mobility.handover;rrc.connection,5,300.0,False,Composite KPI regression with tight tolerances
+REG-KPI-002,kpi_regression,regression,n78,phy.link_adaptation;mac.harq;mac.scheduler;mobility.handover;rrc.connection,5,300.0,False,Composite KPI regression with tight tolerances
+REG-KPI-003,kpi_regression,regression,n78,phy.link_adaptation;mac.harq;mobility.handover;mobility.measurement;rrc.timers,5,300.0,False,Composite KPI regression with tight tolerances
+REG-KPI-004,kpi_regression,regression,n78,phy.pathloss;phy.link_adaptation;transport.latency;rrc.connection,4,300.0,False,Composite KPI regression with tight tolerances
+STAB-LONG-001,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,900.0,False,Long-duration soak test
+STAB-LONG-002,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,900.0,False,Long-duration soak test
+STAB-LONG-003,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,1800.0,False,Long-duration soak test
+STAB-LONG-004,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,1800.0,False,Long-duration soak test
+STAB-LONG-005,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,3600.0,False,Long-duration soak test
+STAB-LONG-006,stability,stability,n78,transport.buffer;rrc.timers;session.reconnect;rrc.connection,4,3600.0,False,Long-duration soak test

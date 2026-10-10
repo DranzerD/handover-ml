@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Ruff lint
+        run: ruff check src tests validation_suite scripts
+      - name: Ruff format check
+        run: ruff format --check src tests validation_suite scripts
+
+  tests:
+    needs: lint
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements-dev.txt
+          pip install -e . --no-deps
+      - name: Unit + integration tests
+        run: pytest -q
+      - name: Simulated validation suite (fault-free build must pass)
+        run: pytest validation_suite -q -p no:cacheprovider
+
+  smoke-benchmark:
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e . --no-deps
+      - name: End-to-end smoke (generate -> train -> select -> pytest -> compare)
+        run: |
+          cellselect --config configs/smoke.json generate --out results/ci/data
+          cellselect --config configs/smoke.json train --data results/ci/data --out results/ci/models
+          cellselect scenario --seed 5 --area mobility --type feature --out results/ci/scenario.json
+          cellselect --config configs/smoke.json select --scenario results/ci/scenario.json --data results/ci/data --models results/ci/models --budget-fraction 0.3 --out results/ci/selection.json
+          cellselect run --scenario results/ci/scenario.json --selection results/ci/selection.json --results results/ci/selected_results.json
+          cellselect --config configs/smoke.json compare --scenario results/ci/scenario.json --data results/ci/data --models results/ci/models --budget-fraction 0.3 --out results/ci/compare
+      - name: Lightweight reproducible benchmark
+        run: cellselect --config configs/smoke.json benchmark --out results/ci/benchmark
+      - uses: actions/upload-artifact@v4
+        with:
+          name: smoke-benchmark
+          path: |
+            results/ci/benchmark/benchmark_report.html
+            results/ci/benchmark/benchmark_results.json
+            results/ci/benchmark/summary.csv
+            results/ci/benchmark/plots/
+            results/ci/compare/run_report.html
+            results/ci/compare/run_report.json

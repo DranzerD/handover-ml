@@ -1,0 +1,62 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "generation": {
+    "seed": 0,
+    "n_changes": 400,
+    "new_tests": {
+      "HO-PP": 0.8
+    },
+    "fix_prob_detected": 0.7,
+    "fix_prob_undetected": 0.25
+  },
+  "training": {
+    "train_fraction": 0.7,
+    "cv_folds": 4,
+    "models": [
+      "logistic_regression",
+      "random_forest",
+      "gradient_boosting"
+    ],
+    "seed": 0,
+    "selection_metric": "pr_auc",
+    "fast": false
+  },
+  "selection": {
+    "budget_fraction": 0.3,
+    "budget_seconds": null,
+    "include_critical": true,
+    "min_history": 10,
+    "coverage_guard": true,
+    "max_overrun_fraction": 0.1,
+    "uncertainty_std": 0.3,
+    "ucb_k": 0.5,
+    "coverage_weight": 0.4,
+    "changed_item_weight": 5.0,
+    "neighbour_item_weight": 2.0,
+    "random_seed": 0
+  },
+  "benchmark": {
+    "budgets": [
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "strategies": [
+      "full",
+      "random",
+      "history",
+      "coverage",
+      "ml",
+      "ml_nocov",
+      "ml_rank"
+    ],
+    "random_repeats": 5,
+    "max_test_changes": null
+  },
+  "jobs": 3
+}

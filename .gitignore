@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Generated data / models (reproducible via the CLI)
+data/history/
+artifacts/
+results/benchmark/seed_*/
+results/ci/
+results_benchmark.log
+reports/run/
+scripts/_matrix.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

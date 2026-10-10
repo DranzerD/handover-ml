@@ -1,0 +1,3095 @@
+{
+ "strategy": "ml",
+ "effective_strategy": "ml",
+ "model_name": "random_forest",
+ "change_id": 10000,
+ "budget_s": 4911.760000000001,
+ "full_duration_s": 24558.800000000003,
+ "selected_duration_s": 4905.1,
+ "selection_overhead_s": 0.12403120001545176,
+ "n_selected": 82,
+ "n_total": 160,
+ "selected": [
+  "SMOKE-001",
+  "SMOKE-002",
+  "SMOKE-003",
+  "SMOKE-004",
+  "SMOKE-005",
+  "CFG-VALID-001",
+  "HO-INTRA-010",
+  "HO-INTRA-007",
+  "SIG-RSRP-004",
+  "SIG-RSRP-002",
+  "SIG-RSRP-006",
+  "SIG-RSRP-008",
+  "HO-INTRA-004",
+  "CONN-RECON-001",
+  "CONN-RECON-003",
+  "CONN-RECON-002",
+  "CFG-APPLY-003",
+  "CFG-APPLY-002",
+  "CFG-VALID-005",
+  "CFG-APPLY-004",
+  "CFG-VALID-003",
+  "CFG-VALID-006",
+  "HO-INTER-004",
+  "HO-INTER-002",
+  "HO-INTRA-005",
+  "HO-INTRA-011",
+  "CFG-VALID-004",
+  "CFG-APPLY-001",
+  "REG-KPI-001",
+  "HO-INTRA-013",
+  "HO-INTRA-014",
+  "TPUT-DL-012",
+  "CONN-SETUP-001",
+  "HO-INTER-003",
+  "TPUT-DL-010",
+  "CONN-SETUP-005",
+  "TPUT-DL-011",
+  "TPUT-DL-018",
+  "TPUT-DL-017",
+  "TPUT-DL-016",
+  "CFG-APPLY-005",
+  "SIG-DEG-005",
+  "CFG-APPLY-008",
+  "CFG-APPLY-006",
+  "CFG-VALID-002",
+  "TPUT-DL-009",
+  "TPUT-DL-006",
+  "REG-KPI-003",
+  "TPUT-DL-015",
+  "SIG-DEG-004",
+  "SIG-DEG-006",
+  "CFG-APPLY-009",
+  "SIG-DEG-003",
+  "SIG-DEG-001",
+  "CFG-APPLY-010",
+  "CFG-APPLY-007",
+  "REG-KPI-002",
+  "LAT-LOSS-004",
+  "TPUT-DL-003",
+  "SIG-CQI-004",
+  "SIG-CQI-002",
+  "SIG-CQI-001",
+  "TPUT-DL-014",
+  "TPUT-DL-013",
+  "REG-KPI-004",
+  "SIG-CQI-007",
+  "TPUT-DL-008",
+  "TPUT-DL-007",
+  "TPUT-DL-005",
+  "TPUT-DL-004",
+  "TPUT-DL-002",
+  "TPUT-DL-001",
+  "SIG-CQI-006",
+  "SIG-CQI-005",
+  "SIG-DEG-002",
+  "LAT-LOSS-005",
+  "SIG-CQI-008",
+  "SIG-CQI-003",
+  "INT-OUT-001",
+  "TPUT-UL-011",
+  "TPUT-UL-012",
+  "TPUT-UL-010"
+ ],
+ "warnings": [],
+ "fallbacks": [],
+ "decisions": [
+  {
+   "test_id": "SMOKE-001",
+   "selected": true,
+   "duration_s": 20.0,
+   "category": "smoke",
+   "tags": [
+    "rrc.connection"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 1,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "SMOKE-002",
+   "selected": true,
+   "duration_s": 40.0,
+   "category": "smoke",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.scheduler"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 2,
+   "predicted_p": 0.005425925925925926,
+   "uncertainty": 0.05386581853119514,
+   "score": null
+  },
+  {
+   "test_id": "SMOKE-003",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "smoke",
+   "tags": [
+    "transport.latency"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 3,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "SMOKE-004",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "smoke",
+   "tags": [
+    "mobility.handover"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 4,
+   "predicted_p": 0.005726190476190476,
+   "uncertainty": 0.043972918747160264,
+   "score": null
+  },
+  {
+   "test_id": "SMOKE-005",
+   "selected": true,
+   "duration_s": 10.0,
+   "category": "smoke",
+   "tags": [
+    "config.parser"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 5,
+   "predicted_p": 0.006291005291005292,
+   "uncertainty": 0.05456198433061988,
+   "score": null
+  },
+  {
+   "test_id": "CFG-VALID-001",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": true,
+   "reasons": [
+    "mandatory: critical test, never skipped"
+   ],
+   "rank": 6,
+   "predicted_p": 0.008513227513227513,
+   "uncertainty": 0.0587653903095478,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-010",
+   "selected": true,
+   "duration_s": 37.8,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.34): risk raised to upper bound 0.402",
+    "coverage guard: covers changed component mobility.measurement (best risk/cost of 33 candidates, p=0.233)"
+   ],
+   "rank": 7,
+   "predicted_p": 0.2325430350850519,
+   "uncertainty": 0.33974889330055513,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-007",
+   "selected": true,
+   "duration_s": 45.6,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.35): risk raised to upper bound 0.435",
+    "high predicted failure risk p=0.259 (uncertainty-adjusted 0.435); expected new detection 0.201; coverage gain 0.000; utility 15.891/h (greedy pick 3)"
+   ],
+   "rank": 8,
+   "predicted_p": 0.2590955513052151,
+   "uncertainty": 0.352407619524156,
+   "score": 0.004414236208367776
+  },
+  {
+   "test_id": "SIG-RSRP-004",
+   "selected": true,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.36): risk raised to upper bound 0.428",
+    "high predicted failure risk p=0.247 (uncertainty-adjusted 0.428); expected new detection 0.370; coverage gain 0.041; utility 32.865/h (greedy pick 1)"
+   ],
+   "rank": 9,
+   "predicted_p": 0.24710769396295712,
+   "uncertainty": 0.36273681788731793,
+   "score": 0.009129120318024429
+  },
+  {
+   "test_id": "SIG-RSRP-002",
+   "selected": true,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.36): risk raised to upper bound 0.428",
+    "high predicted failure risk p=0.248 (uncertainty-adjusted 0.428); expected new detection 0.211; coverage gain 0.010; utility 17.692/h (greedy pick 2)"
+   ],
+   "rank": 10,
+   "predicted_p": 0.24768044528570846,
+   "uncertainty": 0.3597804379229597,
+   "score": 0.004914458842750697
+  },
+  {
+   "test_id": "SIG-RSRP-006",
+   "selected": true,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.35): risk raised to upper bound 0.426",
+    "high predicted failure risk p=0.252 (uncertainty-adjusted 0.426); expected new detection 0.108; coverage gain 0.000; utility 8.610/h (greedy pick 6)"
+   ],
+   "rank": 11,
+   "predicted_p": 0.251989367844631,
+   "uncertainty": 0.34766215569507264,
+   "score": 0.0023917314914251187
+  },
+  {
+   "test_id": "SIG-RSRP-008",
+   "selected": true,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.35): risk raised to upper bound 0.419",
+    "high predicted failure risk p=0.243 (uncertainty-adjusted 0.419); expected new detection 0.052; coverage gain 0.000; utility 4.129/h (greedy pick 12)"
+   ],
+   "rank": 12,
+   "predicted_p": 0.24250584211110535,
+   "uncertainty": 0.3534909406008588,
+   "score": 0.0011468421689627545
+  },
+  {
+   "test_id": "HO-INTRA-004",
+   "selected": true,
+   "duration_s": 61.2,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.35): risk raised to upper bound 0.450",
+    "high predicted failure risk p=0.275 (uncertainty-adjusted 0.450); expected new detection 0.082; coverage gain 0.000; utility 4.810/h (greedy pick 10)"
+   ],
+   "rank": 13,
+   "predicted_p": 0.27451544622511015,
+   "uncertainty": 0.3503555973668379,
+   "score": 0.0013362354800796937
+  },
+  {
+   "test_id": "CONN-RECON-001",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.35): risk raised to upper bound 0.372",
+    "moderate predicted failure risk p=0.199 (uncertainty-adjusted 0.372); expected new detection 0.290; coverage gain 0.021; utility 12.409/h (greedy pick 5)"
+   ],
+   "rank": 14,
+   "predicted_p": 0.1986840215978147,
+   "uncertainty": 0.3463091325014765,
+   "score": 0.0034470167162070804
+  },
+  {
+   "test_id": "CONN-RECON-003",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.32): risk raised to upper bound 0.308",
+    "moderate predicted failure risk p=0.150 (uncertainty-adjusted 0.308); expected new detection 0.151; coverage gain 0.000; utility 6.034/h (greedy pick 9)"
+   ],
+   "rank": 15,
+   "predicted_p": 0.15018238082368518,
+   "uncertainty": 0.31605489393314024,
+   "score": 0.0016760897659584548
+  },
+  {
+   "test_id": "CONN-RECON-002",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.32): risk raised to upper bound 0.308",
+    "moderate predicted failure risk p=0.150 (uncertainty-adjusted 0.308); expected new detection 0.098; coverage gain 0.000; utility 3.903/h (greedy pick 13)"
+   ],
+   "rank": 16,
+   "predicted_p": 0.15018238082368518,
+   "uncertainty": 0.31605489393314024,
+   "score": 0.0010842256730862398
+  },
+  {
+   "test_id": "CFG-APPLY-003",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.077; expected new detection 0.055; coverage gain 0.000; utility 7.939/h (greedy pick 7)"
+   ],
+   "rank": 17,
+   "predicted_p": 0.07682658269691911,
+   "uncertainty": 0.17642645707642776,
+   "score": 0.0022052579219149293
+  },
+  {
+   "test_id": "CFG-APPLY-002",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.070; expected new detection 0.046; coverage gain 0.000; utility 6.645/h (greedy pick 8)"
+   ],
+   "rank": 18,
+   "predicted_p": 0.06965272049674111,
+   "uncertainty": 0.16956974617911194,
+   "score": 0.0018457345818402126
+  },
+  {
+   "test_id": "CFG-VALID-005",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.011; expected new detection 0.007; coverage gain 0.010; utility 12.715/h (greedy pick 4)"
+   ],
+   "rank": 19,
+   "predicted_p": 0.011305250305250305,
+   "uncertainty": 0.07321170227498418,
+   "score": 0.0035318416056014275
+  },
+  {
+   "test_id": "CFG-APPLY-004",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band",
+    "phy.pathloss"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.056; expected new detection 0.018; coverage gain 0.000; utility 2.655/h (greedy pick 19)"
+   ],
+   "rank": 20,
+   "predicted_p": 0.055764164875204664,
+   "uncertainty": 0.15406201196605215,
+   "score": 0.0007374686043270249
+  },
+  {
+   "test_id": "CFG-VALID-003",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.010; expected new detection 0.005; coverage gain 0.000; utility 3.332/h (greedy pick 16)"
+   ],
+   "rank": 21,
+   "predicted_p": 0.010194139194139194,
+   "uncertainty": 0.06814030246348428,
+   "score": 0.0009256437978541867
+  },
+  {
+   "test_id": "CFG-VALID-006",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.009; expected new detection 0.004; coverage gain 0.000; utility 3.029/h (greedy pick 17)"
+   ],
+   "rank": 22,
+   "predicted_p": 0.00936080586080586,
+   "uncertainty": 0.06671628942040736,
+   "score": 0.0008413110547079224
+  },
+  {
+   "test_id": "HO-INTER-004",
+   "selected": true,
+   "duration_s": 42.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.077; expected new detection 0.004; coverage gain 0.000; utility 0.381/h (greedy pick 47)"
+   ],
+   "rank": 23,
+   "predicted_p": 0.07704657321359001,
+   "uncertainty": 0.22175726069826415,
+   "score": 0.00010569704566935601
+  },
+  {
+   "test_id": "HO-INTER-002",
+   "selected": true,
+   "duration_s": 42.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.074; expected new detection 0.004; coverage gain 0.000; utility 0.339/h (greedy pick 52)"
+   ],
+   "rank": 24,
+   "predicted_p": 0.07428636913195737,
+   "uncertainty": 0.21511858646128465,
+   "score": 9.405858472092985e-05
+  },
+  {
+   "test_id": "HO-INTRA-005",
+   "selected": true,
+   "duration_s": 61.2,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.107; expected new detection 0.005; coverage gain 0.000; utility 0.315/h (greedy pick 53)"
+   ],
+   "rank": 25,
+   "predicted_p": 0.10744670394254792,
+   "uncertainty": 0.24392953684806967,
+   "score": 8.7586416710885e-05
+  },
+  {
+   "test_id": "HO-INTRA-011",
+   "selected": true,
+   "duration_s": 37.8,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.065; expected new detection 0.002; coverage gain 0.000; utility 0.222/h (greedy pick 58)"
+   ],
+   "rank": 26,
+   "predicted_p": 0.06522435897435898,
+   "uncertainty": 0.19175818570213987,
+   "score": 6.167836276635836e-05
+  },
+  {
+   "test_id": "CFG-VALID-004",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.009; expected new detection 0.004; coverage gain 0.000; utility 2.729/h (greedy pick 18)"
+   ],
+   "rank": 27,
+   "predicted_p": 0.008513227513227513,
+   "uncertainty": 0.0587653903095478,
+   "score": 0.0007579718970779806
+  },
+  {
+   "test_id": "CFG-APPLY-001",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.041; expected new detection 0.017; coverage gain 0.000; utility 2.497/h (greedy pick 20)"
+   ],
+   "rank": 28,
+   "predicted_p": 0.04094250900171953,
+   "uncertainty": 0.1268117190177469,
+   "score": 0.0006934735526785626
+  },
+  {
+   "test_id": "REG-KPI-001",
+   "selected": true,
+   "duration_s": 300.0,
+   "category": "regression",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.scheduler",
+    "transport.latency",
+    "mobility.handover",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.36): risk raised to upper bound 0.448",
+    "high predicted failure risk p=0.269 (uncertainty-adjusted 0.448); expected new detection 0.287; coverage gain 0.010; utility 3.564/h (greedy pick 15)"
+   ],
+   "rank": 29,
+   "predicted_p": 0.2687117661750014,
+   "uncertainty": 0.3589608144128328,
+   "score": 0.0009898701935376379
+  },
+  {
+   "test_id": "HO-INTRA-013",
+   "selected": true,
+   "duration_s": 61.2,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.089; expected new detection 0.003; coverage gain 0.000; utility 0.174/h (greedy pick 67)"
+   ],
+   "rank": 30,
+   "predicted_p": 0.08859333750222491,
+   "uncertainty": 0.19776327874381394,
+   "score": 4.836952746611904e-05
+  },
+  {
+   "test_id": "HO-INTRA-014",
+   "selected": true,
+   "duration_s": 37.8,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.046; expected new detection 0.001; coverage gain 0.000; utility 0.125/h (greedy pick 74)"
+   ],
+   "rank": 31,
+   "predicted_p": 0.046243393316922725,
+   "uncertainty": 0.15392861021126375,
+   "score": 3.477620270039275e-05
+  },
+  {
+   "test_id": "TPUT-DL-012",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.073; expected new detection 0.055; coverage gain 0.021; utility 4.539/h (greedy pick 11)"
+   ],
+   "rank": 32,
+   "predicted_p": 0.07334064122725109,
+   "uncertainty": 0.17209265919236788,
+   "score": 0.0012607592064875263
+  },
+  {
+   "test_id": "CONN-SETUP-001",
+   "selected": true,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.058; expected new detection 0.017; coverage gain 0.000; utility 1.210/h (greedy pick 26)"
+   ],
+   "rank": 33,
+   "predicted_p": 0.05779094578103528,
+   "uncertainty": 0.15736132017170906,
+   "score": 0.0003360210975187115
+  },
+  {
+   "test_id": "HO-INTER-003",
+   "selected": true,
+   "duration_s": 78.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.089; expected new detection 0.003; coverage gain 0.000; utility 0.135/h (greedy pick 71)"
+   ],
+   "rank": 34,
+   "predicted_p": 0.08865900707602388,
+   "uncertainty": 0.23614120882780879,
+   "score": 3.7577866030786475e-05
+  },
+  {
+   "test_id": "TPUT-DL-010",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.066; expected new detection 0.032; coverage gain 0.000; utility 1.912/h (greedy pick 21)"
+   ],
+   "rank": 35,
+   "predicted_p": 0.06606812169312168,
+   "uncertainty": 0.16729061938523476,
+   "score": 0.0005310396735481929
+  },
+  {
+   "test_id": "CONN-SETUP-005",
+   "selected": true,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.048; expected new detection 0.012; coverage gain 0.000; utility 0.888/h (greedy pick 30)"
+   ],
+   "rank": 36,
+   "predicted_p": 0.047982425798602256,
+   "uncertainty": 0.14284070016240052,
+   "score": 0.00024654024179282796
+  },
+  {
+   "test_id": "TPUT-DL-011",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.057; expected new detection 0.026; coverage gain 0.000; utility 1.553/h (greedy pick 23)"
+   ],
+   "rank": 37,
+   "predicted_p": 0.05745792633292632,
+   "uncertainty": 0.15312960069834686,
+   "score": 0.0004313205554530079
+  },
+  {
+   "test_id": "TPUT-DL-018",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.053; expected new detection 0.022; coverage gain 0.000; utility 1.333/h (greedy pick 25)"
+   ],
+   "rank": 38,
+   "predicted_p": 0.053119708994709,
+   "uncertainty": 0.14941780160848359,
+   "score": 0.0003703443671106827
+  },
+  {
+   "test_id": "TPUT-DL-017",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.045; expected new detection 0.018; coverage gain 0.000; utility 1.064/h (greedy pick 27)"
+   ],
+   "rank": 39,
+   "predicted_p": 0.04543915343915344,
+   "uncertainty": 0.1546886154416781,
+   "score": 0.00029542146314808133
+  },
+  {
+   "test_id": "TPUT-DL-016",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.043; expected new detection 0.016; coverage gain 0.000; utility 0.971/h (greedy pick 29)"
+   ],
+   "rank": 40,
+   "predicted_p": 0.04343915343915343,
+   "uncertainty": 0.15310015576201527,
+   "score": 0.00026958565738816206
+  },
+  {
+   "test_id": "CFG-APPLY-005",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "transport.buffer"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.015; coverage gain 0.010; utility 3.647/h (greedy pick 14)"
+   ],
+   "rank": 41,
+   "predicted_p": 0.016414021164021162,
+   "uncertainty": 0.08555058404004776,
+   "score": 0.0010131881852135244
+  },
+  {
+   "test_id": "SIG-DEG-005",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.057; expected new detection 0.021; coverage gain 0.000; utility 0.824/h (greedy pick 33)"
+   ],
+   "rank": 42,
+   "predicted_p": 0.05698643948643948,
+   "uncertainty": 0.17358776034611123,
+   "score": 0.00022900411855178383
+  },
+  {
+   "test_id": "CFG-APPLY-008",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.015; expected new detection 0.006; coverage gain 0.000; utility 0.839/h (greedy pick 31)"
+   ],
+   "rank": 43,
+   "predicted_p": 0.015261599511599512,
+   "uncertainty": 0.08466550608234444,
+   "score": 0.00023309969718003296
+  },
+  {
+   "test_id": "CFG-APPLY-006",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "transport.buffer"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.015; expected new detection 0.012; coverage gain 0.000; utility 1.791/h (greedy pick 22)"
+   ],
+   "rank": 44,
+   "predicted_p": 0.014563492063492065,
+   "uncertainty": 0.08785412270228023,
+   "score": 0.0004975082313942951
+  },
+  {
+   "test_id": "CFG-VALID-002",
+   "selected": true,
+   "duration_s": 5.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.003; expected new detection 0.001; coverage gain 0.000; utility 0.707/h (greedy pick 35)"
+   ],
+   "rank": 45,
+   "predicted_p": 0.002611111111111111,
+   "uncertainty": 0.02655596233998072,
+   "score": 0.00019636219924800075
+  },
+  {
+   "test_id": "TPUT-DL-009",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.030; expected new detection 0.010; coverage gain 0.000; utility 0.613/h (greedy pick 37)"
+   ],
+   "rank": 46,
+   "predicted_p": 0.03043898693898694,
+   "uncertainty": 0.12165541327151248,
+   "score": 0.0001702753942429615
+  },
+  {
+   "test_id": "TPUT-DL-006",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.030; expected new detection 0.010; coverage gain 0.000; utility 0.594/h (greedy pick 38)"
+   ],
+   "rank": 47,
+   "predicted_p": 0.03043898693898694,
+   "uncertainty": 0.12165541327151248,
+   "score": 0.00016509238374156916
+  },
+  {
+   "test_id": "REG-KPI-003",
+   "selected": true,
+   "duration_s": 300.0,
+   "category": "regression",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.146; expected new detection 0.022; coverage gain 0.000; utility 0.269/h (greedy pick 56)"
+   ],
+   "rank": 48,
+   "predicted_p": 0.14640709463407672,
+   "uncertainty": 0.26899248522225166,
+   "score": 7.48301757224486e-05
+  },
+  {
+   "test_id": "TPUT-DL-015",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.028; expected new detection 0.009; coverage gain 0.000; utility 0.534/h (greedy pick 39)"
+   ],
+   "rank": 49,
+   "predicted_p": 0.028196923446923452,
+   "uncertainty": 0.11429348479278968,
+   "score": 0.00014827697350703464
+  },
+  {
+   "test_id": "SIG-DEG-004",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.038; expected new detection 0.012; coverage gain 0.000; utility 0.468/h (greedy pick 44)"
+   ],
+   "rank": 50,
+   "predicted_p": 0.03842193454693455,
+   "uncertainty": 0.13105515685960273,
+   "score": 0.00013004230507842866
+  },
+  {
+   "test_id": "SIG-DEG-006",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.037; expected new detection 0.011; coverage gain 0.000; utility 0.431/h (greedy pick 45)"
+   ],
+   "rank": 51,
+   "predicted_p": 0.036749259999259994,
+   "uncertainty": 0.13034493538430333,
+   "score": 0.0001196020373385122
+  },
+  {
+   "test_id": "CFG-APPLY-009",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.010; expected new detection 0.007; coverage gain 0.000; utility 1.048/h (greedy pick 28)"
+   ],
+   "rank": 52,
+   "predicted_p": 0.010194139194139194,
+   "uncertainty": 0.07493545917679655,
+   "score": 0.000291115853111256
+  },
+  {
+   "test_id": "SIG-DEG-003",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.033; expected new detection 0.009; coverage gain 0.000; utility 0.367/h (greedy pick 50)"
+   ],
+   "rank": 53,
+   "predicted_p": 0.03322361897361897,
+   "uncertainty": 0.13539924894961788,
+   "score": 0.00010181968914453523
+  },
+  {
+   "test_id": "SIG-DEG-001",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.033; expected new detection 0.009; coverage gain 0.000; utility 0.350/h (greedy pick 51)"
+   ],
+   "rank": 54,
+   "predicted_p": 0.03286037111037111,
+   "uncertainty": 0.12616621460885372,
+   "score": 9.736061869257455e-05
+  },
+  {
+   "test_id": "CFG-APPLY-010",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.009; expected new detection 0.003; coverage gain 0.000; utility 0.478/h (greedy pick 43)"
+   ],
+   "rank": 55,
+   "predicted_p": 0.008986111111111111,
+   "uncertainty": 0.06066454736581115,
+   "score": 0.00013283217304763698
+  },
+  {
+   "test_id": "CFG-APPLY-007",
+   "selected": true,
+   "duration_s": 25.0,
+   "category": "configuration",
+   "tags": [
+    "config.parser",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.009; expected new detection 0.004; coverage gain 0.000; utility 0.643/h (greedy pick 36)"
+   ],
+   "rank": 56,
+   "predicted_p": 0.008820767195767196,
+   "uncertainty": 0.058127731326626346,
+   "score": 0.0001786857760414079
+  },
+  {
+   "test_id": "REG-KPI-002",
+   "selected": true,
+   "duration_s": 300.0,
+   "category": "regression",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "mobility.handover",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.102; expected new detection 0.025; coverage gain 0.000; utility 0.301/h (greedy pick 55)"
+   ],
+   "rank": 57,
+   "predicted_p": 0.10238622162151576,
+   "uncertainty": 0.23116945987679363,
+   "score": 8.352690724142397e-05
+  },
+  {
+   "test_id": "LAT-LOSS-004",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.020; expected new detection 0.012; coverage gain 0.010; utility 1.361/h (greedy pick 24)"
+   ],
+   "rank": 58,
+   "predicted_p": 0.019664682539682538,
+   "uncertainty": 0.09477809667556049,
+   "score": 0.000377973827674818
+  },
+  {
+   "test_id": "TPUT-DL-003",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.020; expected new detection 0.005; coverage gain 0.000; utility 0.311/h (greedy pick 54)"
+   ],
+   "rank": 59,
+   "predicted_p": 0.01952604802604803,
+   "uncertainty": 0.08922890842203711,
+   "score": 8.627193729781002e-05
+  },
+  {
+   "test_id": "SIG-CQI-004",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.010; expected new detection 0.004; coverage gain 0.000; utility 0.507/h (greedy pick 40)"
+   ],
+   "rank": 60,
+   "predicted_p": 0.009527472527472526,
+   "uncertainty": 0.06725262245912407,
+   "score": 0.00014078864229573554
+  },
+  {
+   "test_id": "SIG-CQI-002",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.010; expected new detection 0.004; coverage gain 0.000; utility 0.502/h (greedy pick 41)"
+   ],
+   "rank": 61,
+   "predicted_p": 0.009527472527472526,
+   "uncertainty": 0.06725262245912407,
+   "score": 0.00013944728237408278
+  },
+  {
+   "test_id": "SIG-CQI-001",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.010; expected new detection 0.004; coverage gain 0.000; utility 0.497/h (greedy pick 42)"
+   ],
+   "rank": 62,
+   "predicted_p": 0.009527472527472526,
+   "uncertainty": 0.06725262245912407,
+   "score": 0.00013811870222223298
+  },
+  {
+   "test_id": "TPUT-DL-014",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.017; expected new detection 0.004; coverage gain 0.000; utility 0.211/h (greedy pick 59)"
+   ],
+   "rank": 63,
+   "predicted_p": 0.016989010989010987,
+   "uncertainty": 0.08279464088098479,
+   "score": 5.864915466288167e-05
+  },
+  {
+   "test_id": "TPUT-DL-013",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.017; expected new detection 0.003; coverage gain 0.000; utility 0.208/h (greedy pick 60)"
+   ],
+   "rank": 64,
+   "predicted_p": 0.016989010989010987,
+   "uncertainty": 0.08279464088098479,
+   "score": 5.765276352981778e-05
+  },
+  {
+   "test_id": "REG-KPI-004",
+   "selected": true,
+   "duration_s": 300.0,
+   "category": "regression",
+   "tags": [
+    "phy.pathloss",
+    "phy.link_adaptation",
+    "transport.latency",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "moderate predicted failure risk p=0.085; expected new detection 0.020; coverage gain 0.000; utility 0.246/h (greedy pick 57)"
+   ],
+   "rank": 65,
+   "predicted_p": 0.0846915584415584,
+   "uncertainty": 0.18792618903428268,
+   "score": 6.826155152379083e-05
+  },
+  {
+   "test_id": "SIG-CQI-007",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.008; expected new detection 0.003; coverage gain 0.000; utility 0.396/h (greedy pick 46)"
+   ],
+   "rank": 66,
+   "predicted_p": 0.008271464646464647,
+   "uncertainty": 0.06374589613249468,
+   "score": 0.00011000781411672475
+  },
+  {
+   "test_id": "TPUT-DL-008",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.194/h (greedy pick 61)"
+   ],
+   "rank": 67,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 5.389340018894599e-05
+  },
+  {
+   "test_id": "TPUT-DL-007",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.191/h (greedy pick 62)"
+   ],
+   "rank": 68,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 5.302271578772496e-05
+  },
+  {
+   "test_id": "TPUT-DL-005",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.188/h (greedy pick 63)"
+   ],
+   "rank": 69,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 5.2166097883029856e-05
+  },
+  {
+   "test_id": "TPUT-DL-004",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.185/h (greedy pick 64)"
+   ],
+   "rank": 70,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 5.1323319221077106e-05
+  },
+  {
+   "test_id": "TPUT-DL-002",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.182/h (greedy pick 65)"
+   ],
+   "rank": 71,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 5.049415621952194e-05
+  },
+  {
+   "test_id": "TPUT-DL-001",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "mac.scheduler",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.016; expected new detection 0.003; coverage gain 0.000; utility 0.179/h (greedy pick 66)"
+   ],
+   "rank": 72,
+   "predicted_p": 0.016155677655677655,
+   "uncertainty": 0.08169602070571443,
+   "score": 4.967838890814392e-05
+  },
+  {
+   "test_id": "SIG-CQI-006",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.008; expected new detection 0.003; coverage gain 0.000; utility 0.373/h (greedy pick 48)"
+   ],
+   "rank": 73,
+   "predicted_p": 0.007846560846560845,
+   "uncertainty": 0.05771433349241251,
+   "score": 0.00010349354750655468
+  },
+  {
+   "test_id": "SIG-CQI-005",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.008; expected new detection 0.003; coverage gain 0.000; utility 0.370/h (greedy pick 49)"
+   ],
+   "rank": 74,
+   "predicted_p": 0.007846560846560845,
+   "uncertainty": 0.05771433349241251,
+   "score": 0.00010268147908881806
+  },
+  {
+   "test_id": "SIG-DEG-002",
+   "selected": true,
+   "duration_s": 90.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.020; expected new detection 0.003; coverage gain 0.000; utility 0.130/h (greedy pick 72)"
+   ],
+   "rank": 75,
+   "predicted_p": 0.01997890997890998,
+   "uncertainty": 0.08730153031463142,
+   "score": 3.616495808870351e-05
+  },
+  {
+   "test_id": "LAT-LOSS-005",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.011; expected new detection 0.003; coverage gain 0.000; utility 0.159/h (greedy pick 68)"
+   ],
+   "rank": 76,
+   "predicted_p": 0.011335317460317459,
+   "uncertainty": 0.06729257655663748,
+   "score": 4.4037098297714795e-05
+  },
+  {
+   "test_id": "SIG-CQI-008",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.005; expected new detection 0.001; coverage gain 0.000; utility 0.125/h (greedy pick 73)"
+   ],
+   "rank": 77,
+   "predicted_p": 0.004642857142857143,
+   "uncertainty": 0.039384016022556666,
+   "score": 3.483371542405043e-05
+  },
+  {
+   "test_id": "SIG-CQI-003",
+   "selected": true,
+   "duration_s": 30.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.link_adaptation",
+    "mac.harq"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.004; expected new detection 0.001; coverage gain 0.000; utility 0.106/h (greedy pick 75)"
+   ],
+   "rank": 78,
+   "predicted_p": 0.00396135265700483,
+   "uncertainty": 0.036448258902535925,
+   "score": 2.9582639616201924e-05
+  },
+  {
+   "test_id": "INT-OUT-001",
+   "selected": true,
+   "duration_s": 50.5,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.006; expected new detection 0.001; coverage gain 0.010; utility 0.811/h (greedy pick 34)"
+   ],
+   "rank": 79,
+   "predicted_p": 0.006333333333333333,
+   "uncertainty": 0.06628138669507617,
+   "score": 0.00022524927126568346
+  },
+  {
+   "test_id": "TPUT-UL-011",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.008; expected new detection 0.004; coverage gain 0.010; utility 0.833/h (greedy pick 32)"
+   ],
+   "rank": 80,
+   "predicted_p": 0.00752417057255767,
+   "uncertainty": 0.061837803637443796,
+   "score": 0.00023127436211182832
+  },
+  {
+   "test_id": "TPUT-UL-012",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.006; expected new detection 0.002; coverage gain 0.000; utility 0.136/h (greedy pick 69)"
+   ],
+   "rank": 81,
+   "predicted_p": 0.005538461538461538,
+   "uncertainty": 0.04846635891550327,
+   "score": 3.779930106831666e-05
+  },
+  {
+   "test_id": "TPUT-UL-010",
+   "selected": true,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "low predicted failure risk p=0.006; expected new detection 0.002; coverage gain 0.000; utility 0.135/h (greedy pick 70)"
+   ],
+   "rank": 82,
+   "predicted_p": 0.005538461538461538,
+   "uncertainty": 0.04846635891550327,
+   "score": 3.7589951093169054e-05
+  },
+  {
+   "test_id": "CONN-RECON-004",
+   "selected": false,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.008, utility below cut-off / budget exhausted (duration 90s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.007661998132586367,
+   "uncertainty": 0.05914694819663852,
+   "score": null
+  },
+  {
+   "test_id": "CONN-RECON-005",
+   "selected": false,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.010, utility below cut-off / budget exhausted (duration 90s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.009964285714285714,
+   "uncertainty": 0.06003179783831803,
+   "score": null
+  },
+  {
+   "test_id": "CONN-RECON-006",
+   "selected": false,
+   "duration_s": 90.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "rrc.timers",
+    "session.reconnect"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.010, utility below cut-off / budget exhausted (duration 90s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.009964285714285714,
+   "uncertainty": 0.06003179783831803,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-002",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.004880583241048358,
+   "uncertainty": 0.04137477276983114,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-003",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.006, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0062261904761904754,
+   "uncertainty": 0.04867553861371041,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-004",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.006, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0062261904761904754,
+   "uncertainty": 0.04867553861371041,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-006",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.005332690520741844,
+   "uncertainty": 0.04435710667612308,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-007",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.008, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.007615079365079365,
+   "uncertainty": 0.05325594036870732,
+   "score": null
+  },
+  {
+   "test_id": "CONN-SETUP-008",
+   "selected": false,
+   "duration_s": 50.0,
+   "category": "connection",
+   "tags": [
+    "rrc.connection",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.008, utility below cut-off / budget exhausted (duration 50s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.007615079365079365,
+   "uncertainty": 0.05325594036870732,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTER-001",
+   "selected": false,
+   "duration_s": 78.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.088, utility below cut-off / budget exhausted (duration 78s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0876845172801055,
+   "uncertainty": 0.2304278008664452,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-001",
+   "selected": false,
+   "duration_s": 342.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "model uncertain (tree std 0.31): risk raised to upper bound 0.357",
+    "not selected: moderate predicted risk p=0.200, utility below cut-off / budget exhausted (duration 342s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.20025987216953606,
+   "uncertainty": 0.3142319749189596,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-002",
+   "selected": false,
+   "duration_s": 342.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.057, utility below cut-off / budget exhausted (duration 342s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.05683598454921984,
+   "uncertainty": 0.1750720401349119,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-003",
+   "selected": false,
+   "duration_s": 342.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.026, utility below cut-off / budget exhausted (duration 342s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.025544000661647717,
+   "uncertainty": 0.11195019468913388,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-006",
+   "selected": false,
+   "duration_s": 61.2,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.025, utility below cut-off / budget exhausted (duration 61s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.025274834642481696,
+   "uncertainty": 0.10464876842238587,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-008",
+   "selected": false,
+   "duration_s": 45.6,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.045, utility below cut-off / budget exhausted (duration 46s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.04504182690947397,
+   "uncertainty": 0.14000842989462423,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-009",
+   "selected": false,
+   "duration_s": 45.6,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.019, utility below cut-off / budget exhausted (duration 46s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.018714228581875637,
+   "uncertainty": 0.08645896416553794,
+   "score": null
+  },
+  {
+   "test_id": "HO-INTRA-012",
+   "selected": false,
+   "duration_s": 37.8,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.035, utility below cut-off / budget exhausted (duration 38s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.035057246130775536,
+   "uncertainty": 0.13380427434489794,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-001",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.014, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.013565323565323565,
+   "uncertainty": 0.07841919449626518,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-002",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.077, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.07724108431251288,
+   "uncertainty": 0.20437204295720296,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-003",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.077, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.07724108431251288,
+   "uncertainty": 0.20437204295720296,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-004",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.077, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.07724108431251288,
+   "uncertainty": 0.20437204295720296,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-005",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.077, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.07724108431251288,
+   "uncertainty": 0.20437204295720296,
+   "score": null
+  },
+  {
+   "test_id": "HO-PP-006",
+   "selected": false,
+   "duration_s": 300.0,
+   "category": "handover",
+   "tags": [
+    "mobility.handover",
+    "mobility.measurement"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: moderate predicted risk p=0.077, utility below cut-off / budget exhausted (duration 300s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.07724108431251288,
+   "uncertainty": 0.20437204295720296,
+   "score": null
+  },
+  {
+   "test_id": "INT-OUT-002",
+   "selected": false,
+   "duration_s": 91.5,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.009, utility below cut-off / budget exhausted (duration 92s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.00932142857142857,
+   "uncertainty": 0.06316439493877757,
+   "score": null
+  },
+  {
+   "test_id": "INT-OUT-003",
+   "selected": false,
+   "duration_s": 52.0,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.003, utility below cut-off / budget exhausted (duration 52s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.002962962962962963,
+   "uncertainty": 0.026810312697561258,
+   "score": null
+  },
+  {
+   "test_id": "INT-OUT-004",
+   "selected": false,
+   "duration_s": 96.0,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.007, utility below cut-off / budget exhausted (duration 96s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.007027777777777778,
+   "uncertainty": 0.052182986146922274,
+   "score": null
+  },
+  {
+   "test_id": "INT-OUT-005",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.004, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0035185185185185185,
+   "uncertainty": 0.028421552323691566,
+   "score": null
+  },
+  {
+   "test_id": "INT-OUT-006",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "interruption",
+   "tags": [
+    "session.reconnect",
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.009, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.009472222222222222,
+   "uncertainty": 0.06418541693339368,
+   "score": null
+  },
+  {
+   "test_id": "INT-RLM-001",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.004833333333333334,
+   "uncertainty": 0.06042879188672309,
+   "score": null
+  },
+  {
+   "test_id": "INT-RLM-002",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.004833333333333334,
+   "uncertainty": 0.06042879188672309,
+   "score": null
+  },
+  {
+   "test_id": "INT-RLM-003",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.007, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.007420634920634921,
+   "uncertainty": 0.056199036990231266,
+   "score": null
+  },
+  {
+   "test_id": "INT-RLM-004",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.004833333333333334,
+   "uncertainty": 0.06042879188672309,
+   "score": null
+  },
+  {
+   "test_id": "INT-RLM-005",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "interruption",
+   "tags": [
+    "rrc.timers"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.004833333333333334,
+   "uncertainty": 0.06042879188672309,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-001",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-002",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-003",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-004",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-005",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-BURST-006",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.buffer",
+    "transport.latency"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0004444444444444444,
+   "uncertainty": 0.007685162873684684,
+   "score": null
+  },
+  {
+   "test_id": "LAT-LOSS-001",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.003, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0031111111111111114,
+   "uncertainty": 0.03950558641540056,
+   "score": null
+  },
+  {
+   "test_id": "LAT-LOSS-002",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.003, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0031111111111111114,
+   "uncertainty": 0.03950558641540056,
+   "score": null
+  },
+  {
+   "test_id": "LAT-LOSS-003",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.003, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0031111111111111114,
+   "uncertainty": 0.03950558641540056,
+   "score": null
+  },
+  {
+   "test_id": "LAT-LOSS-006",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "mac.harq",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.005, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.005351449275362319,
+   "uncertainty": 0.06045788698783523,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-001",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.002, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0022905982905982907,
+   "uncertainty": 0.024028156955656396,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-002",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.002, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0022905982905982907,
+   "uncertainty": 0.024028156955656396,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-003",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.004, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.003907004830917875,
+   "uncertainty": 0.02928170607257492,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-004",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.004, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.003907004830917875,
+   "uncertainty": 0.02928170607257492,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-005",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.002, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0022905982905982907,
+   "uncertainty": 0.024028156955656396,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-006",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.002, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0022905982905982907,
+   "uncertainty": 0.024028156955656396,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-007",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.004, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0038607085346215784,
+   "uncertainty": 0.029100633273544618,
+   "score": null
+  },
+  {
+   "test_id": "LAT-RTT-008",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "latency_loss",
+   "tags": [
+    "transport.latency",
+    "mac.harq",
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.004, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0038607085346215784,
+   "uncertainty": 0.029100633273544618,
+   "score": null
+  },
+  {
+   "test_id": "SIG-RSRP-001",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.013, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.013182208994708995,
+   "uncertainty": 0.08003668433122041,
+   "score": null
+  },
+  {
+   "test_id": "SIG-RSRP-003",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.014, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01372089947089947,
+   "uncertainty": 0.08016847089915963,
+   "score": null
+  },
+  {
+   "test_id": "SIG-RSRP-005",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.011, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01142089947089947,
+   "uncertainty": 0.07456077966247111,
+   "score": null
+  },
+  {
+   "test_id": "SIG-RSRP-007",
+   "selected": false,
+   "duration_s": 45.0,
+   "category": "signal_quality",
+   "tags": [
+    "phy.pathloss",
+    "mobility.measurement",
+    "config.band"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.012, utility below cut-off / budget exhausted (duration 45s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.011578042328042328,
+   "uncertainty": 0.07539231968111203,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-001",
+   "selected": false,
+   "duration_s": 900.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.010, utility below cut-off / budget exhausted (duration 900s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.010245904995904997,
+   "uncertainty": 0.07471332632025647,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-002",
+   "selected": false,
+   "duration_s": 900.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.015, utility below cut-off / budget exhausted (duration 900s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.014521142256436376,
+   "uncertainty": 0.08962656547086664,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-003",
+   "selected": false,
+   "duration_s": 1800.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.011, utility below cut-off / budget exhausted (duration 1800s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.011487762237762239,
+   "uncertainty": 0.07709172797826154,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-004",
+   "selected": false,
+   "duration_s": 1800.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.020, utility below cut-off / budget exhausted (duration 1800s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.019531243266537383,
+   "uncertainty": 0.1039837721662927,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-005",
+   "selected": false,
+   "duration_s": 3600.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.015, utility below cut-off / budget exhausted (duration 3600s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.014521142256436376,
+   "uncertainty": 0.08962656547086664,
+   "score": null
+  },
+  {
+   "test_id": "STAB-LONG-006",
+   "selected": false,
+   "duration_s": 3600.0,
+   "category": "stability",
+   "tags": [
+    "transport.buffer",
+    "rrc.timers",
+    "session.reconnect",
+    "rrc.connection"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.020, utility below cut-off / budget exhausted (duration 3600s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.019531243266537383,
+   "uncertainty": 0.1039837721662927,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-001",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-002",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-003",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-004",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.000, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0,
+   "uncertainty": 0.0,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-005",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.019, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01902777777777778,
+   "uncertainty": 0.11637753524575348,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-006",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.019, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01902777777777778,
+   "uncertainty": 0.11637753524575348,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-007",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.019, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01902777777777778,
+   "uncertainty": 0.11637753524575348,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-MU-008",
+   "selected": false,
+   "duration_s": 120.0,
+   "category": "throughput",
+   "tags": [
+    "mac.scheduler"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.019, utility below cut-off / budget exhausted (duration 120s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.01902777777777778,
+   "uncertainty": 0.11637753524575348,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-001",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-002",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-003",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-004",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-005",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-006",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.002, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0015046904315197,
+   "uncertainty": 0.015546441717937669,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-007",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-008",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  },
+  {
+   "test_id": "TPUT-UL-009",
+   "selected": false,
+   "duration_s": 60.0,
+   "category": "throughput",
+   "tags": [
+    "power.control",
+    "phy.pathloss",
+    "phy.link_adaptation"
+   ],
+   "critical": false,
+   "reasons": [
+    "not selected: low predicted risk p=0.001, utility below cut-off / budget exhausted (duration 60s)"
+   ],
+   "rank": null,
+   "predicted_p": 0.0011794871794871796,
+   "uncertainty": 0.01452024816721828,
+   "score": null
+  }
+ ]
+}

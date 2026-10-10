@@ -1,0 +1,46 @@
+{
+  "visible": {
+    "change_id": 10000,
+    "change_type": "feature",
+    "area": "mobility",
+    "changed_components": [
+      "mobility.handover",
+      "mobility.measurement"
+    ],
+    "lines_changed": 307,
+    "files_changed": 1,
+    "env": {
+      "device": "devC",
+      "lab_interference_db": 1.96,
+      "temperature_c": 25.9,
+      "firmware_branch": "main"
+    },
+    "seed": 565298527
+  },
+  "ground_truth": {
+    "new_faults": [
+      "F_L3_FILTER",
+      "F_N311"
+    ],
+    "carried_faults": [],
+    "active_faults": [
+      "F_L3_FILTER",
+      "F_N311"
+    ],
+    "fault_details": {
+      "F_L3_FILTER": {
+        "fault_id": "F_L3_FILTER",
+        "component": "mobility.measurement",
+        "description": "L3 filter coefficient ignored",
+        "manifests_when": "fast fading near cell border"
+      },
+      "F_N311": {
+        "fault_id": "F_N311",
+        "component": "rrc.timers",
+        "description": "N311 in-sync counter requires 20 indications",
+        "manifests_when": "fades close to T310"
+      }
+    },
+    "_note": "Hidden ground truth. Never read by selection strategies; used only by the executor."
+  }
+}

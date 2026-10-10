@@ -1,0 +1,938 @@
+{
+ "scenario_change_id": 10000,
+ "exit_status": 1,
+ "results": [
+  {
+   "test_id": "SMOKE-001",
+   "nodeid": "validation_suite/test_smoke.py::test_attach[SMOKE-001]",
+   "nominal_duration_s": 20.0,
+   "wall_s": 0.00048180000158026814,
+   "outcome": "passed",
+   "kpis": {
+    "success_rate": 1.0,
+    "setup_ms": 56.0
+   }
+  },
+  {
+   "test_id": "SMOKE-002",
+   "nodeid": "validation_suite/test_smoke.py::test_basic_downlink[SMOKE-002]",
+   "nominal_duration_s": 40.0,
+   "wall_s": 0.00039760000072419643,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 186.05155737802377,
+    "ratio": 1.0222569218437048
+   }
+  },
+  {
+   "test_id": "SMOKE-003",
+   "nodeid": "validation_suite/test_smoke.py::test_basic_latency[SMOKE-003]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.009662500000558794,
+   "outcome": "passed",
+   "kpis": {
+    "p95_ms": 10.395417445256642
+   }
+  },
+  {
+   "test_id": "SMOKE-004",
+   "nodeid": "validation_suite/test_smoke.py::test_basic_handover[SMOKE-004]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0016386999923270196,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1,
+    "rlf": 0
+   }
+  },
+  {
+   "test_id": "SMOKE-005",
+   "nodeid": "validation_suite/test_smoke.py::test_default_config[SMOKE-005]",
+   "nominal_duration_s": 10.0,
+   "wall_s": 0.00011369999265298247,
+   "outcome": "passed",
+   "kpis": {
+    "bandwidth_mhz": 40.0
+   }
+  },
+  {
+   "test_id": "CFG-VALID-001",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-001]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.00010840001050382853,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0
+   }
+  },
+  {
+   "test_id": "HO-INTRA-010",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-010]",
+   "nominal_duration_s": 37.8,
+   "wall_s": 0.0007128000142984092,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 35.95806514317928
+   }
+  },
+  {
+   "test_id": "HO-INTRA-007",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-007]",
+   "nominal_duration_s": 45.6,
+   "wall_s": 0.0009422000148333609,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 29.399365454745848
+   }
+  },
+  {
+   "test_id": "SIG-RSRP-004",
+   "nodeid": "validation_suite/test_signal_quality.py::test_rsrp_measurement_accuracy[SIG-RSRP-004]",
+   "nominal_duration_s": 45.0,
+   "wall_s": 0.0006044000037945807,
+   "outcome": "passed",
+   "kpis": {
+    "rsrp_dbm": -86.51733333333334,
+    "bias_db": 0.6529988742886133,
+    "jitter_db": 1.4276358079006006
+   }
+  },
+  {
+   "test_id": "SIG-RSRP-002",
+   "nodeid": "validation_suite/test_signal_quality.py::test_rsrp_measurement_accuracy[SIG-RSRP-002]",
+   "nominal_duration_s": 45.0,
+   "wall_s": 0.0005963000003248453,
+   "outcome": "passed",
+   "kpis": {
+    "rsrp_dbm": -76.34755555555556,
+    "bias_db": -0.2359331477595248,
+    "jitter_db": 1.458494132933852
+   }
+  },
+  {
+   "test_id": "SIG-RSRP-006",
+   "nodeid": "validation_suite/test_signal_quality.py::test_rsrp_measurement_accuracy[SIG-RSRP-006]",
+   "nominal_duration_s": 45.0,
+   "wall_s": 0.000618399993982166,
+   "outcome": "passed",
+   "kpis": {
+    "rsrp_dbm": -95.32444444444444,
+    "bias_db": -1.0776440142973627,
+    "jitter_db": 1.329520474215431
+   }
+  },
+  {
+   "test_id": "SIG-RSRP-008",
+   "nodeid": "validation_suite/test_signal_quality.py::test_rsrp_measurement_accuracy[SIG-RSRP-008]",
+   "nominal_duration_s": 45.0,
+   "wall_s": 0.0006435000104829669,
+   "outcome": "passed",
+   "kpis": {
+    "rsrp_dbm": -95.63466666666666,
+    "bias_db": 1.3406504891952693,
+    "jitter_db": 1.430725689990922
+   }
+  },
+  {
+   "test_id": "HO-INTRA-004",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-004]",
+   "nominal_duration_s": 61.2,
+   "wall_s": 0.0015617000171914697,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 3.0,
+    "rlf": 0.0,
+    "ping_pong": 1.0,
+    "max_interruption_ms": 36.94075343432564
+   }
+  },
+  {
+   "test_id": "CONN-RECON-001",
+   "nodeid": "validation_suite/test_connection.py::test_reconnection[CONN-RECON-001]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00012889999197795987,
+   "outcome": "passed",
+   "kpis": {
+    "max_reest_ms": 65.50875641085896,
+    "max_recovery_s": 0.1901895465845322
+   }
+  },
+  {
+   "test_id": "CONN-RECON-003",
+   "nodeid": "validation_suite/test_connection.py::test_reconnection[CONN-RECON-003]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00014509999891743064,
+   "outcome": "passed",
+   "kpis": {
+    "max_reest_ms": 118.14599919239286,
+    "max_recovery_s": 0.19616716127269876
+   }
+  },
+  {
+   "test_id": "CONN-RECON-002",
+   "nodeid": "validation_suite/test_connection.py::test_reconnection[CONN-RECON-002]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00014150000060908496,
+   "outcome": "passed",
+   "kpis": {
+    "max_reest_ms": 84.86774684195852,
+    "max_recovery_s": 0.14425547569694022
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-003",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-003]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0008487000013701618,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 629.445819767904,
+    "ratio_error": 0.03567034016118198
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-002",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-002]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0004825000069104135,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 623.6929632598025,
+    "ratio_error": 0.012588949522682968
+   }
+  },
+  {
+   "test_id": "CFG-VALID-005",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-005]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.0001100999943446368,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 0.0
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-004",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-004]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0005096000095363706,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 256.0731803628832,
+    "ratio_error": -0.04617065279263577
+   }
+  },
+  {
+   "test_id": "CFG-VALID-003",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-003]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.00011130000348202884,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0
+   }
+  },
+  {
+   "test_id": "CFG-VALID-006",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-006]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.00010269999620504677,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 0.0
+   }
+  },
+  {
+   "test_id": "HO-INTER-004",
+   "nodeid": "validation_suite/test_handover.py::test_inter_frequency_handover[HO-INTER-004]",
+   "nominal_duration_s": 42.0,
+   "wall_s": 0.001133300014771521,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "max_interruption_ms": 47.391685845228
+   }
+  },
+  {
+   "test_id": "HO-INTER-002",
+   "nodeid": "validation_suite/test_handover.py::test_inter_frequency_handover[HO-INTER-002]",
+   "nominal_duration_s": 42.0,
+   "wall_s": 0.0009191000135615468,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "max_interruption_ms": 44.246362374216375
+   }
+  },
+  {
+   "test_id": "HO-INTRA-005",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-005]",
+   "nominal_duration_s": 61.2,
+   "wall_s": 0.0015619000187143683,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 34.5577855255606
+   }
+  },
+  {
+   "test_id": "HO-INTRA-011",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-011]",
+   "nominal_duration_s": 37.8,
+   "wall_s": 0.0007731000077910721,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 31.34512966005643
+   }
+  },
+  {
+   "test_id": "CFG-VALID-004",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-004]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.0001773000112734735,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 0.0
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-001",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-001]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0005821000086143613,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 333.8862147036631,
+    "ratio_error": -0.006602388055228503
+   }
+  },
+  {
+   "test_id": "REG-KPI-001",
+   "nodeid": "validation_suite/test_regression_stability.py::test_kpi_regression[REG-KPI-001]",
+   "nominal_duration_s": 300.0,
+   "wall_s": 0.0021881999855395406,
+   "outcome": "passed",
+   "kpis": {
+    "tput_ratio": 1.1012427789131076,
+    "p95_ms": 18.224979611587425,
+    "setup_success": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0
+   }
+  },
+  {
+   "test_id": "HO-INTRA-013",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-013]",
+   "nominal_duration_s": 61.2,
+   "wall_s": 0.001556600007461384,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 35.997466316556775
+   }
+  },
+  {
+   "test_id": "HO-INTRA-014",
+   "nodeid": "validation_suite/test_handover.py::test_intra_frequency_handover[HO-INTRA-014]",
+   "nominal_duration_s": 37.8,
+   "wall_s": 0.0009203999943565577,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0,
+    "max_interruption_ms": 34.37860724468622
+   }
+  },
+  {
+   "test_id": "TPUT-DL-012",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-012]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00042559998109936714,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 615.1796870053194,
+    "ratio": 1.0781609718280218
+   }
+  },
+  {
+   "test_id": "CONN-SETUP-001",
+   "nodeid": "validation_suite/test_connection.py::test_rrc_connection_setup[CONN-SETUP-001]",
+   "nominal_duration_s": 50.0,
+   "wall_s": 0.0002950999769382179,
+   "outcome": "passed",
+   "kpis": {
+    "success_rate": 1.0,
+    "setup_ms": 70.96
+   }
+  },
+  {
+   "test_id": "HO-INTER-003",
+   "nodeid": "validation_suite/test_handover.py::test_inter_frequency_handover[HO-INTER-003]",
+   "nominal_duration_s": 78.0,
+   "wall_s": 0.0019271000055596232,
+   "outcome": "passed",
+   "kpis": {
+    "handovers": 5.0,
+    "max_interruption_ms": 47.405552416522205
+   }
+  },
+  {
+   "test_id": "TPUT-DL-010",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-010]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0005139000131748617,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 236.95631240090114,
+    "ratio": 1.0746105473347225
+   }
+  },
+  {
+   "test_id": "CONN-SETUP-005",
+   "nodeid": "validation_suite/test_connection.py::test_rrc_connection_setup[CONN-SETUP-005]",
+   "nominal_duration_s": 50.0,
+   "wall_s": 0.00028670000028796494,
+   "outcome": "passed",
+   "kpis": {
+    "success_rate": 1.0,
+    "setup_ms": 69.36
+   }
+  },
+  {
+   "test_id": "TPUT-DL-011",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-011]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004451999848242849,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 430.9654719887196,
+    "ratio": 1.039704851461301
+   }
+  },
+  {
+   "test_id": "TPUT-DL-018",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-018]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00043569999979808927,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 608.1891612548137,
+    "ratio": 1.0659094098926083
+   }
+  },
+  {
+   "test_id": "TPUT-DL-017",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-017]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004600000102072954,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 408.3607528126428,
+    "ratio": 1.1419732453550602
+   }
+  },
+  {
+   "test_id": "TPUT-DL-016",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-016]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004707000043708831,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 242.44978137771395,
+    "ratio": 1.099523746076402
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-005",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-005]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.00020290000247769058,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "effective_mtu": 1280.0
+   }
+  },
+  {
+   "test_id": "SIG-DEG-005",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-005]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.002654099982464686,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 1.0066720352200067,
+    "residual_loss": 0.0002219249268100566
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-008",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-008]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.00011870000162161887,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 0.0
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-006",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-006]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.00011239998275414109,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "effective_mtu": 9000.0
+   }
+  },
+  {
+   "test_id": "CFG-VALID-002",
+   "nodeid": "validation_suite/test_configuration.py::test_config_validation[CFG-VALID-002]",
+   "nominal_duration_s": 5.0,
+   "wall_s": 0.00017419998766854405,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0
+   }
+  },
+  {
+   "test_id": "TPUT-DL-009",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-009]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.000518000015290454,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 338.77360198935025,
+    "ratio": 1.110610545994433
+   }
+  },
+  {
+   "test_id": "TPUT-DL-006",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-006]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004920999926980585,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 160.1936091556794,
+    "ratio": 1.0701515955333412
+   }
+  },
+  {
+   "test_id": "REG-KPI-003",
+   "nodeid": "validation_suite/test_regression_stability.py::test_kpi_regression[REG-KPI-003]",
+   "nominal_duration_s": 300.0,
+   "wall_s": 0.0017997999966610223,
+   "outcome": "passed",
+   "kpis": {
+    "tput_ratio": 0.9391425740001148,
+    "p95_ms": 12.992894127582172,
+    "setup_success": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0
+   }
+  },
+  {
+   "test_id": "TPUT-DL-015",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-015]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004788000078406185,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 239.73188949678675,
+    "ratio": 1.0820920595809762
+   }
+  },
+  {
+   "test_id": "SIG-DEG-004",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-004]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.002636199991684407,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 0.9592579863328737,
+    "residual_loss": 7.68404286658109e-14
+   }
+  },
+  {
+   "test_id": "SIG-DEG-006",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-006]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00269649998517707,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 0.9902681568802949,
+    "residual_loss": 0.0006666666709537518
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-009",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-009]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0001407999952789396,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 0.0
+   }
+  },
+  {
+   "test_id": "SIG-DEG-003",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-003]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00269799999659881,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 0.9982087997811491,
+    "residual_loss": 0.0006666666919480902
+   }
+  },
+  {
+   "test_id": "SIG-DEG-001",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-001]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.0027402999985497445,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 1.0110867766252147,
+    "residual_loss": 9.39778623508341e-13
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-010",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-010]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.0005585000035353005,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 55.04772240805059,
+    "ratio_error": -0.010762024727409503
+   }
+  },
+  {
+   "test_id": "CFG-APPLY-007",
+   "nodeid": "validation_suite/test_configuration.py::test_apply_config_change[CFG-APPLY-007]",
+   "nominal_duration_s": 25.0,
+   "wall_s": 0.000499500019941479,
+   "outcome": "passed",
+   "kpis": {
+    "accepted": 1.0,
+    "tput_after_mbps": 180.81966703751675,
+    "ratio_error": -0.07652085059368074
+   }
+  },
+  {
+   "test_id": "REG-KPI-002",
+   "nodeid": "validation_suite/test_regression_stability.py::test_kpi_regression[REG-KPI-002]",
+   "nominal_duration_s": 300.0,
+   "wall_s": 0.002008800016483292,
+   "outcome": "passed",
+   "kpis": {
+    "tput_ratio": 1.0479500922054108,
+    "p95_ms": 13.984574185863535,
+    "setup_success": 1.0,
+    "rlf": 0.0,
+    "ping_pong": 0.0
+   }
+  },
+  {
+   "test_id": "LAT-LOSS-004",
+   "nodeid": "validation_suite/test_latency_loss.py::test_packet_loss_under_interference[LAT-LOSS-004]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00048660000902600586,
+   "outcome": "passed",
+   "kpis": {
+    "residual_loss": 0.0023583649067757326
+   }
+  },
+  {
+   "test_id": "TPUT-DL-003",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-003]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00048389998846687376,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 55.39136950611758,
+    "ratio": 1.0798515465243597
+   }
+  },
+  {
+   "test_id": "SIG-CQI-004",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-004]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.00040950000402517617,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.0038857668771677843,
+    "cqi_error": -0.0033333333333338544
+   }
+  },
+  {
+   "test_id": "SIG-CQI-002",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-002]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.0003730999887920916,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.05009678024780182,
+    "cqi_error": 0.16000000000000014
+   }
+  },
+  {
+   "test_id": "SIG-CQI-001",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-001]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.0003932000254280865,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.05375806242883642,
+    "cqi_error": 0.35666666666666647
+   }
+  },
+  {
+   "test_id": "TPUT-DL-014",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-014]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0005005999992135912,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 169.13640459811583,
+    "ratio": 1.050900188171604
+   }
+  },
+  {
+   "test_id": "TPUT-DL-013",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-013]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00047530001029372215,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 90.02908960048036,
+    "ratio": 1.0515319102608356
+   }
+  },
+  {
+   "test_id": "REG-KPI-004",
+   "nodeid": "validation_suite/test_regression_stability.py::test_kpi_regression[REG-KPI-004]",
+   "nominal_duration_s": 300.0,
+   "wall_s": 0.0012464000028558075,
+   "outcome": "passed",
+   "kpis": {
+    "tput_ratio": 1.0730749362634555,
+    "p95_ms": 18.024072009359198,
+    "setup_success": 1.0
+   }
+  },
+  {
+   "test_id": "SIG-CQI-007",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-007]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.00038129999302327633,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.03675579654007094,
+    "cqi_error": -0.09666666666666579
+   }
+  },
+  {
+   "test_id": "TPUT-DL-008",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-008]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004526000120677054,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 238.51804127626664,
+    "ratio": 1.0763646821106254
+   }
+  },
+  {
+   "test_id": "TPUT-DL-007",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-007]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00046729997848160565,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 129.3433674539517,
+    "ratio": 1.09722979229949
+   }
+  },
+  {
+   "test_id": "TPUT-DL-005",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-005]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0006390999769791961,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 111.99543769065436,
+    "ratio": 1.0298795206048492
+   }
+  },
+  {
+   "test_id": "TPUT-DL-004",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-004]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00044770000386051834,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 61.71062474192911,
+    "ratio": 1.066746573593338
+   }
+  },
+  {
+   "test_id": "TPUT-DL-002",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-002]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004735999973490834,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 33.063645544614346,
+    "ratio": 1.0678137307970337
+   }
+  },
+  {
+   "test_id": "TPUT-DL-001",
+   "nodeid": "validation_suite/test_throughput.py::test_downlink_throughput[TPUT-DL-001]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004512000014074147,
+   "outcome": "passed",
+   "kpis": {
+    "tput_mbps": 14.364514335585742,
+    "ratio": 1.077319291153619
+   }
+  },
+  {
+   "test_id": "SIG-CQI-006",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-006]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.0003926999925170094,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.052974799989615906,
+    "cqi_error": 0.5099999999999998
+   }
+  },
+  {
+   "test_id": "SIG-CQI-005",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-005]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.0003603000077418983,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.04674599941691708,
+    "cqi_error": 0.3900000000000001
+   }
+  },
+  {
+   "test_id": "SIG-DEG-002",
+   "nodeid": "validation_suite/test_signal_quality.py::test_link_degradation_recovery[SIG-DEG-002]",
+   "nominal_duration_s": 90.0,
+   "wall_s": 0.00252759997965768,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "recovery_ratio": 0.9796817315141225,
+    "residual_loss": 0.00022221275687837584
+   }
+  },
+  {
+   "test_id": "LAT-LOSS-005",
+   "nodeid": "validation_suite/test_latency_loss.py::test_packet_loss_under_interference[LAT-LOSS-005]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.0004883999936282635,
+   "outcome": "failed",
+   "kpis": {},
+   "message": "residual packet loss 6.15e-03 > 0.5 %"
+  },
+  {
+   "test_id": "SIG-CQI-008",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-008]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.00045819999650120735,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.00340089573476569,
+    "cqi_error": -0.0066666666666659324
+   }
+  },
+  {
+   "test_id": "SIG-CQI-003",
+   "nodeid": "validation_suite/test_signal_quality.py::test_cqi_link_adaptation[SIG-CQI-003]",
+   "nominal_duration_s": 30.0,
+   "wall_s": 0.00039599998854100704,
+   "outcome": "passed",
+   "kpis": {
+    "bler": 0.0470429577480631,
+    "cqi_error": -0.043333333333333
+   }
+  },
+  {
+   "test_id": "INT-OUT-001",
+   "nodeid": "validation_suite/test_interruption.py::test_outage_recovery[INT-OUT-001]",
+   "nominal_duration_s": 50.5,
+   "wall_s": 0.0003129000251647085,
+   "outcome": "passed",
+   "kpis": {
+    "rlf": 0.0,
+    "max_recovery_s": 0.3309308937439504
+   }
+  },
+  {
+   "test_id": "TPUT-UL-011",
+   "nodeid": "validation_suite/test_throughput.py::test_uplink_throughput_power_control[TPUT-UL-011]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.005576199997449294,
+   "outcome": "passed",
+   "kpis": {
+    "ul_tput_mbps": 9.911599796669508,
+    "ratio": 0.8614631438018692,
+    "ul_sinr_db": 10.144982141263519
+   }
+  },
+  {
+   "test_id": "TPUT-UL-012",
+   "nodeid": "validation_suite/test_throughput.py::test_uplink_throughput_power_control[TPUT-UL-012]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.004974199982825667,
+   "outcome": "passed",
+   "kpis": {
+    "ul_tput_mbps": 9.752957361367272,
+    "ratio": 0.847674793398358,
+    "ul_sinr_db": 10.118139339565701
+   }
+  },
+  {
+   "test_id": "TPUT-UL-010",
+   "nodeid": "validation_suite/test_throughput.py::test_uplink_throughput_power_control[TPUT-UL-010]",
+   "nominal_duration_s": 60.0,
+   "wall_s": 0.00482559998636134,
+   "outcome": "passed",
+   "kpis": {
+    "ul_tput_mbps": 9.686084753655582,
+    "ratio": 0.8418625846676444,
+    "ul_sinr_db": 10.148381610323655
+   }
+  }
+ ]
+}

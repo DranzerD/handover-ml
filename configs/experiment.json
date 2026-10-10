@@ -1,0 +1,32 @@
+{
+  "_comment": "Main benchmark configuration. 3 seeds x 400 simulated changes; temporal 70/30 split; budgets as fractions of full-suite nominal lab time.",
+  "seeds": [0, 1, 2],
+  "generation": {
+    "n_changes": 400,
+    "new_tests": {"HO-PP": 0.8},
+    "fix_prob_detected": 0.7,
+    "fix_prob_undetected": 0.25
+  },
+  "training": {
+    "train_fraction": 0.7,
+    "cv_folds": 4,
+    "models": ["logistic_regression", "random_forest", "gradient_boosting"],
+    "selection_metric": "pr_auc",
+    "fast": false
+  },
+  "selection": {
+    "include_critical": true,
+    "min_history": 10,
+    "coverage_guard": true,
+    "max_overrun_fraction": 0.1,
+    "uncertainty_std": 0.30,
+    "ucb_k": 0.5,
+    "coverage_weight": 0.4
+  },
+  "benchmark": {
+    "budgets": [0.1, 0.2, 0.3, 0.5],
+    "strategies": ["full", "random", "history", "coverage", "ml", "ml_nocov", "ml_rank"],
+    "random_repeats": 5
+  },
+  "jobs": 3
+}

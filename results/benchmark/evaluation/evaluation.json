@@ -1,0 +1,147 @@
+{
+  "best_model": "random_forest",
+  "metrics": [
+    {
+      "model": "logistic_regression",
+      "cv_pr_auc": 0.1210687629900424,
+      "test_pr_auc": 0.2111864384249425,
+      "test_roc_auc": 0.90070743547861,
+      "precision": 0.2438692098092643,
+      "recall": 0.34555984555984554,
+      "f1": 0.28594249201277955,
+      "threshold": 0.09256138496291709,
+      "tn": 17887,
+      "fp": 555,
+      "fn": 339,
+      "tp": 179
+    },
+    {
+      "model": "random_forest",
+      "cv_pr_auc": 0.14052303402905753,
+      "test_pr_auc": 0.20804601509375148,
+      "test_roc_auc": 0.917011917567714,
+      "precision": 0.24577861163227016,
+      "recall": 0.2528957528957529,
+      "f1": 0.24928639391056137,
+      "threshold": 0.22493518518518532,
+      "tn": 18040,
+      "fp": 402,
+      "fn": 387,
+      "tp": 131
+    },
+    {
+      "model": "gradient_boosting",
+      "cv_pr_auc": 0.09076361076496056,
+      "test_pr_auc": 0.19592010990147687,
+      "test_roc_auc": 0.899332887118919,
+      "precision": 0.2592,
+      "recall": 0.3127413127413127,
+      "f1": 0.28346456692913385,
+      "threshold": 0.08589897286176854,
+      "tn": 17979,
+      "fp": 463,
+      "fn": 356,
+      "tp": 162
+    },
+    {
+      "model": "heuristic_hist_fail_rate",
+      "cv_pr_auc": NaN,
+      "test_pr_auc": 0.09319424539023644,
+      "test_roc_auc": 0.8053130884304293,
+      "precision": 0.12531645569620253,
+      "recall": 0.19111969111969113,
+      "f1": 0.15137614678899083,
+      "threshold": 0.0944700460829493,
+      "tn": 17751,
+      "fp": 691,
+      "fn": 419,
+      "tp": 99
+    },
+    {
+      "model": "heuristic_last_failed",
+      "cv_pr_auc": NaN,
+      "test_pr_auc": 0.19321500258677177,
+      "test_roc_auc": 0.8484310510798961,
+      "precision": 0.3223684210526316,
+      "recall": 0.28378378378378377,
+      "f1": 0.30184804928131415,
+      "threshold": 1.0002350427350428,
+      "tn": 18133,
+      "fp": 309,
+      "fn": 371,
+      "tp": 147
+    },
+    {
+      "model": "heuristic_change_overlap",
+      "cv_pr_auc": NaN,
+      "test_pr_auc": 0.08577249737881981,
+      "test_roc_auc": 0.7865942751123318,
+      "precision": 0.09579563597658329,
+      "recall": 0.3474903474903475,
+      "f1": 0.15018773466833543,
+      "threshold": 0.5001666666666666,
+      "tn": 16743,
+      "fp": 1699,
+      "fn": 338,
+      "tp": 180
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "last_failed",
+      "importance_mean": 0.039563602755007775,
+      "importance_std": 0.002303800368874001
+    },
+    {
+      "feature": "runs_since_fail",
+      "importance_mean": 0.025227335644795856,
+      "importance_std": 0.003292456336869285
+    },
+    {
+      "feature": "category_prev_fail_frac",
+      "importance_mean": 0.01651099552364459,
+      "importance_std": 0.002147935814282466
+    },
+    {
+      "feature": "hist_fail_rate_when_overlap",
+      "importance_mean": 0.010237644248230074,
+      "importance_std": 0.0016455059439396667
+    },
+    {
+      "feature": "lines_changed_log",
+      "importance_mean": 0.009740582669268036,
+      "importance_std": 0.0006843916201938056
+    },
+    {
+      "feature": "firmware_branch",
+      "importance_mean": 0.006798032149548226,
+      "importance_std": 0.0019537564596019664
+    },
+    {
+      "feature": "hist_fail_rate_last10",
+      "importance_mean": 0.004170954188757302,
+      "importance_std": 0.006242863835895556
+    },
+    {
+      "feature": "files_changed",
+      "importance_mean": 0.002656728134076506,
+      "importance_std": 0.001669653950742914
+    },
+    {
+      "feature": "change_type",
+      "importance_mean": 0.0019356958140685776,
+      "importance_std": 0.0021453705098857592
+    },
+    {
+      "feature": "device",
+      "importance_mean": 0.0016310284183563468,
+      "importance_std": 0.002997102991187538
+    }
+  ],
+  "plots": {
+    "pr_curves": "results\\benchmark\\evaluation\\pr_curves.png",
+    "confusion_best": "results\\benchmark\\evaluation\\confusion_best.png",
+    "feature_importance": "results\\benchmark\\evaluation\\feature_importance.png"
+  },
+  "synthetic_data": true
+}

@@ -1,0 +1,9 @@
+{
+  "_comment": "Tiny configuration for CI smoke runs (minutes on a laptop). Results are NOT representative.",
+  "seeds": [0],
+  "generation": {"n_changes": 80, "new_tests": {"HO-PP": 0.8}},
+  "training": {"train_fraction": 0.7, "cv_folds": 2, "fast": true},
+  "selection": {"min_history": 5},
+  "benchmark": {"budgets": [0.2, 0.4], "random_repeats": 2},
+  "jobs": 1
+}
